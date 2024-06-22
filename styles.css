@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -14,7 +15,7 @@ body {
 
 header {
     background: #000; /* Black background */
-    padding: 10px 20px;
+    padding: 0px 20px;
     position: fixed;
     width: 100%;
     z-index: 1000;
