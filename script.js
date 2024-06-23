@@ -47,4 +47,16 @@ document.addEventListener('DOMContentLoaded', function() {
             document.body.classList.remove('no-scroll'); // Ensure scroll lock is removed
         });
     });
+
+    // Handle dropdown on mobile
+    const dropdown = document.querySelector('.dropdown > a');
+    if (dropdown) {
+        dropdown.addEventListener('click', (e) => {
+            if (window.innerWidth <= 768) {
+                e.preventDefault();
+                const dropdownMenu = dropdown.nextElementSibling;
+                dropdownMenu.classList.toggle('active');
+            }
+        });
+    }
 });
