@@ -1,4 +1,4 @@
-/* Reset and Basic Styles */
+@import url(font.css);
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +7,7 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'VanguardCF', sans-serif;
     color: #FFF;
     background-color: #000;
     line-height: 1.6;
@@ -26,6 +26,11 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+nav.nav{
+    font-weight: bold;
+    background-color: #a0c3c3;
+    width: 100vw;
 }
 .logo img {
     height: 50px;
@@ -82,7 +87,7 @@ body.no-scroll {
 
 /* Hero Section */
 .hero-section {
-    background: url('images/hero.jpg') no-repeat center center/cover fixed; /* Background image with fixed position */
+    background: url('../images/hero.jpg') no-repeat center center/cover fixed; /* Background image with fixed position */
     height: 90vh;
     display: flex;
     justify-content: center;
