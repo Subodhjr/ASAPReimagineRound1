@@ -8,24 +8,30 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    color: #FFF;
-    background-color: #000;
+    color: #ffffff;
+    background-color: #000000;
     line-height: 1.6;
 }
 
 header {
-    background: #000; /* Black background */
-    padding: 0px 20px;
+    background: rgba(0, 0, 0, 0); /* Black background */
+    padding: 0 360px;
     position: fixed;
     width: 100%;
     z-index: 1000;
     top: 0; /* Ensure navbar starts at the top of the page */
+    align-items: center;
 }
 
 nav {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
+    size: 800px;
+    background-color: black;
+    box-shadow: gray;
+    border-radius: 40px;
 }
 .logo img {
     height: 50px;
@@ -47,7 +53,6 @@ nav {
     align-items: center;
     margin-left: auto;
 }
-
 .nav-links li {
     margin-left: 35px;
 }
@@ -285,7 +290,7 @@ body.no-scroll {
 .about-section {
     padding: 50px 20px;
     text-align: center;
-    background: #111; /* Dark background */
+    background: #0e0e0e; /* Dark background */
 }
 
 .about-section h2 {
@@ -302,7 +307,7 @@ body.no-scroll {
 .contact-section {
     padding: 50px 20px;
     text-align: center;
-    background: #111; /* Dark background */
+    background: #0e0e0e; /* Dark background */
 }
 
 .contact-section h2 {
