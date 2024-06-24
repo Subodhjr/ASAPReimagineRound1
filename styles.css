@@ -538,13 +538,23 @@ footer {
     .dropdown-menu {
         position: relative;
         top: 0;
+        right: 0;
         background-color: transparent;
-        box-shadow: none;
+        list-style: none;
         opacity: 1;
         visibility: visible;
+        display: none;
+        transition: all 0.3s ease;
     }
-
+    .dropdown-menu li {
+        padding: 10px;
+    }
     .dropdown-menu a {
-        padding: 10px 20px;
+        color: #00CCCC; /* New color */
+        text-decoration: none;
+        font-size: 1rem;
+    }
+    .dropdown.active .dropdown-menu {
+        display: block;
     }
 }
