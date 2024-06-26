@@ -4,24 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project One</title>
-    <link rel="icon" type="image/png" href="/images/tablogo.png" sizes="128x128">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="./images/tablogo.png" sizes="128x128">
+    <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
     <!-- Header Section -->
     <header>
         <nav>
-            <div class="logo">
-                <a href="/">
-                <img src="images/logo.png" alt="Logo">
-                </a>
-            </div>
-            <ul class="nav-links">
-                <li><a href="index.html#home">Home</a></li>
-                <li><a href="index.html#services">Services</a></li>
-                <li class="dropdown">
-                    <a href="#products" class="products-link">Products</a>
+            <div class="navlist">
+                <div class="logo">
+                    <a href="/">
+                        <img src="./images/logo/logo.png" alt="Logo">
+                    </a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li class="dropdown">
+                        <a href="#products" class="products-link">Products</a>
                     <ul class="dropdown-menu">
                         <li><a href="Project0.html">Project Zero</a></li>
                         <li><a href="project1.html">Project One</a></li>
@@ -34,15 +35,27 @@
             <div class="hamburger">
                 <i class="fas fa-bars"></i>
             </div>
+        </div>
         </nav>
     </header>
 
     <!-- Product Detail Section -->
     <section class="product-detail-section">
         <h1>Project One</h1>
-        <img src="images/yatri_1.jpg" alt="Project One">
+        <img src="./images/yatri_1.jpg" alt="Project One">
         <p>Here is a more detailed description of Project One. This includes its features, specifications, and other relevant details that potential customers might find useful.</p>
+        <div class="button">
+            <button>buy now</button>
+        </div>
     </section>
+
+    <div class="p0">
+        <div class="p0detail">
+            <div class="battery">
+                <p> battery details</p>
+            </div>
+        </div>
+    </div>
 
     <!-- Footer Section -->
     <footer>
@@ -51,6 +64,6 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <!-- Custom Script -->
-    <script src="script.js"></script>
+    <script src="./javascript/script.js"></script>
 </body>
 </html>

@@ -1,20 +1,68 @@
+/* VanguardCF Font Definitions */
 @font-face {
     font-family: 'VanguardCF';
     src: url('../fonts/Vanguard-CF/Demo_Fonts/Fontspring-DEMO-vanguardcf-demibold.otf') format('opentype');
     font-weight: 600;
     font-style: normal;
-}
-
-@font-face {
+  }
+  
+  @font-face {
     font-family: 'VanguardCF';
     src: url('../fonts/Vanguard-CF/Demo_Fonts/Fontspring-DEMO-vanguardcf-bold.otf') format('opentype');
     font-weight: bold;
     font-style: normal;
-}
-
-@font-face {
+  }
+  
+  @font-face {
     font-family: 'VanguardCF';
     src: url('../fonts/Fontspring-DEMO-vanguardcf-regular.otf') format('opentype');
     font-weight: 900;
     font-style: normal;
-}
+  }
+  
+  /* Barlow Font Definitions */
+  @font-face {
+    font-family: 'Barlow';
+    src: url('../fonts/Barlow/Barlow-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Barlow';
+    src: url('../fonts/Barlow/Barlow-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  /* Repeat for all Barlow font weights and styles */
+  @font-face {
+    font-family: 'Barlow';
+    src: url('../fonts/Barlow/Barlow-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Barlow';
+    src: url('../fonts/Barlow/Barlow-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Barlow';
+    src: url('../fonts/Barlow/Barlow-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  /* Include italic styles as needed */
+  @font-face {
+    font-family: 'Barlow';
+    src: url('../fonts/Barlow/Barlow-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  

@@ -7,7 +7,7 @@
 }
 
 body {
-    font-family: 'vanguardCF', sans-serif;
+    font-family: 'Barlow', sans-serif;
     color: #ffffff;
     background-color: #000000;
     line-height: 1.6;
@@ -15,29 +15,33 @@ body {
 
 header {
     background: rgba(0, 0, 0, 0); /* Black background */
-    padding: 0 360px;
+    /* padding: 0 360px; */
     position: fixed;
     width: 100%;
     z-index: 1000;
     top: 0; /* Ensure navbar starts at the top of the page */
-    align-items: center;
+    /* align-items: center; */
+    /* justify-content: center; */
 }
-
-nav {
+nav{
+    font-weight: bold;
+    /* background-color: #a0c3c3; */
+    border-radius: 40px; 
+    /* width: 100vw; */
+}
+nav >.navlist {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    size: 800px;
-    background-color: black;
-    box-shadow: gray;
+    width: 100%;
+    background-color: rgba(19, 39, 47, 0.523);
+    box-shadow: rgb(193, 38, 38);
+    border-radius: 40px;
+    font-weight: bold;
     border-radius: 40px;
 }
-nav.nav{
-    font-weight: bold;
-    background-color: #a0c3c3;
-    width: 100vw;
-}
+
 .logo img {
     height: 50px;
 }
