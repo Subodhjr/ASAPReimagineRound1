@@ -16,12 +16,11 @@ body {
 
 header {
     background: rgba(0, 0, 0, 0); /* Black background */
-    padding: 0 360px;
     position: fixed;
     width: 100%;
     z-index: 1000;
     top: 0; /* Ensure navbar starts at the top of the page */
-    align-items: center;
+    height: 50px;
 }
 
 nav {
@@ -29,21 +28,24 @@ nav {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    size: 800px;
+    size: 750px;
     background-color: black;
     box-shadow: gray;
     border-radius: 40px;
+    height: 50px;
 }
 nav.nav{
     font-weight: bold;
-    background-color: #222222;
+    background-color: #222222ec;
     width: 750px;
     align-items: center;
     justify-content: space-between;
-    animation: scaleIn 1s ease forwards;
+    animation: scaleIn 1.5s ease forwards;
     transform-origin: center;
     border-color: #000;
     border-style: solid;
+    height: 50px;
+    margin: auto;
 }
 @keyframes scaleIn {
     0% {
@@ -263,7 +265,6 @@ body.no-scroll {
 .slide-caption h3 {
     font-size: 2rem;
 }
-
 .expand-description {
     position: absolute;
     top: 200px;
@@ -385,7 +386,7 @@ footer {
 }
 
 /* Media Queries */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     header{
         border-radius: 30px;
         padding: 0 100px;
@@ -400,6 +401,7 @@ footer {
         align-items: center;
         border-radius: 40px;
         padding: 0 20px;
+        height: 70px;
     }
     @keyframes scaleIn {
         0% {
@@ -408,9 +410,6 @@ footer {
         100% {
             transform: scaleX(1);
         }
-    }
-    .logo {
-        margin-bottom: 10px;
     }
     .nav-links {
         position: fixed;
@@ -570,6 +569,29 @@ footer {
     font-size: 1.2rem;
     line-height: 1.6;
 }
+.product-detail-section button{
+    background: #00CCCC; /* New color */
+    color: #222222;
+    text-decoration: solid;
+    font-weight: 600;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background 0.3s;
+    padding: 10px;
+    border-radius: 40px;
+    border-style: solid;
+    border-color: #222222;
+    padding: 0 20px;
+    height: 50px;
+    width: 200px;
+
+}
+.product-detail-section button:hover{
+    background: #222222;
+    color: #00CCCC;
+    transition: 500ms;
+    border-color: #00CCCC;
+}
 /* Dropdown Menu Styles */
 .dropdown {
     position: relative;
@@ -612,7 +634,7 @@ footer {
 }
 
 /* Responsive Styles */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     .dropdown-menu {
         position: relative;
         top: 0;

@@ -11,30 +11,32 @@
 <body>
     <!-- Header Section -->
     <header>
-        <nav>
+        <div>
+        <nav class="nav">
             <div class="logo">
-                <a href="/">
-                <img src="images/logo.png" alt="Logo">
-                </a>
+                <a href="./index.html"><img src="./images/logo.png" alt="Logo"></a>
             </div>
-            <ul class="nav-links">
-                <li><a href="index.html#home">Home</a></li>
-                <li><a href="index.html#services">Services</a></li>
-                <li class="dropdown">
-                    <a href="#products" class="products-link">Products</a>
-                    <ul class="dropdown-menu">
+            <div>
+                <ul class="nav-links">
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li class="dropdown">
+                        <a href="#products" class="products-link">Products</a>
+                        <ul class="dropdown-menu">
                         <li><a href="Project0.html">Project Zero</a></li>
-                        <li><a href="project1.html">Project One</a></li>
+                        <li><a href="Project1.html">Project One</a></li>
                         <!-- Add more products as needed -->
-                    </ul>
-                </li>
-                <li><a href="index.html#about">About Us</a></li>
-                <li><a href="index.html#contact">Contact</a></li>
-            </ul>
+                        </ul>
+                    </li>
+                    <li><a href="index.html#about">About Us</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
             <div class="hamburger">
                 <i class="fas fa-bars"></i>
             </div>
         </nav>
+        </div>
     </header>
 
     <!-- Product Detail Section -->
@@ -42,8 +44,8 @@
         <h1>Project One</h1>
         <img src="images/yatri_1.jpg" alt="Project One">
         <p>Here is a more detailed description of Project One. This includes its features, specifications, and other relevant details that potential customers might find useful.</p>
+        <button type="submit">Register</button>
     </section>
-
     <!-- Footer Section -->
     <footer>
         <p>&copy; 2024 Yatri Motors. All rights reserved.</p>
