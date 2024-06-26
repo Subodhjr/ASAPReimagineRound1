@@ -609,6 +609,7 @@ footer {
     transition: opacity 0.3s ease;
     opacity: 0;
     visibility: hidden;
+    border-radius: 20px;
 }
 
 .dropdown-menu li {
