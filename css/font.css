@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'VanguardCF';
+    src: url('../fonts/Vanguard-CF/Demo_Fonts/Fontspring-DEMO-vanguardcf-demibold.otf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'VanguardCF';
+    src: url('../fonts/Vanguard-CF/Demo_Fonts/Fontspring-DEMO-vanguardcf-bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'VanguardCF';
+    src: url('../fonts/Fontspring-DEMO-vanguardcf-regular.otf') format('opentype');
+    font-weight: 900;
+    font-style: normal;
+}

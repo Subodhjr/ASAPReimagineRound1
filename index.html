@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YATRI MOTORS</title>
-    <link rel="icon" type="image/png" href="/images/tablogo.png" sizes="128x128">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="./images/tablogo.png" sizes="128x128">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/font.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <!-- Slick Slider CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
@@ -14,37 +15,39 @@
 <body>
     <!-- Header Section -->
     <header>
-        <nav>
+        <div>
+        <nav class="nav">
             <div class="logo">
-                <a href="/">
-                <img src="images/logo.png" alt="Logo">
-                </a>
+                <a href="./index.html"><img src="./images/logo.png" alt="Logo"></a>
             </div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li class="dropdown">
-                    <a href="#products">Products</a>
-                    <ul class="dropdown-menu">
+            <div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li class="dropdown">
+                        <a href="#products" class="products-link">Products</a>
+                        <ul class="dropdown-menu">
                         <li><a href="Project0.html">Project Zero</a></li>
-                        <li><a href="Project0.html">Project One</a></li>
+                        <li><a href="Project1.html">Project One</a></li>
                         <!-- Add more products as needed -->
-                    </ul>
-                </li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+                        </ul>
+                    </li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
             <div class="hamburger">
                 <i class="fas fa-bars"></i>
             </div>
         </nav>
+        </div>
     </header>
 
     <!-- Hero Section -->
     <section id="home" class="hero-section">
         <div class="hero-content">
             <h1>Welcome to Our Automotive Website</h1>
-            <p>Your one-stop solution for all automotive needs.</p>
+            <p>Your one stop solution for all automotive needs.</p>
             <a href="#services" class="hero-btn">Our Services</a>
         </div>
     </section>
@@ -142,6 +145,6 @@
     <!-- Slick Slider JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <!-- Custom Script -->
-    <script src="script.js"></script>
+    <script src="./javascript/script.js"></script>
 </body>
 </html>

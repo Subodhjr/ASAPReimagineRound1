@@ -59,4 +59,16 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
+    $('.products-link').click(function(e){
+        e.preventDefault();
+        $(this).parent().toggleClass('active');
+    });
+    $(document).click(function(e) {
+        if (!$(e.target).closest('nav').length) {
+            $('.nav-links').removeClass('active');
+            $('body').removeClass('no-scroll');
+            $('.hamburger').removeClass('active');
+            $('.dropdown').removeClass('active');
+        }
+    });
 });
