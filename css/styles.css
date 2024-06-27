@@ -29,22 +29,23 @@ nav {
     justify-content: center;
     align-items: center;
     size: 750px;
-    background-color: black;
-    box-shadow: gray;
-    border-radius: 40px;
+    /* background-color: black; */
+    /* box-shadow: gray; */
+    border-radius: 100px;
 }
 nav.nav{
     font-weight: bold;
-    background-color: #222222ec;
+    background-color: #1f353d;
     width: 750px;
     align-items: center;
     justify-content: space-between;
     animation: scaleIn 1.5s ease forwards;
     transform-origin: center;
-    border-color: #000;
+    border-color: #3b53586a;
     border-style: solid;
     height: 50px;
     margin: auto;
+    
 }
 @keyframes scaleIn {
     0% {
@@ -113,19 +114,29 @@ body.no-scroll {
 
 /* Hero Section */
 .hero-section {
-    background: url('../images/hero.jpg') no-repeat center center/cover fixed; /* Background image with fixed position */
-    height: 90vh;
+    height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
     color: white;
-    margin-top: 64px; /* Offset for fixed header */
     position: relative; /* Ensure z-index works correctly */
+    overflow: hidden;
 }
 
+.hero-section video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 .hero-content {
-    position: relative; /* Ensure z-index works correctly */
+    position: absolute;
+    top: 50%; /* Adjust vertical positioning as needed */
+    left: 50%; /* Adjust horizontal positioning as needed */
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 1; /* Ensure z-index works correctly */
 }
 
 .hero-content h1 {
