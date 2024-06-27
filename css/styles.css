@@ -163,7 +163,8 @@ body.no-scroll {
 }
 
 .hero-btn:hover {
-    background: #00FFFF; /* Slightly lighter shade */
+    background: #222222;
+    color: #00CCCC;
 }
 
 /* Keyframe Animations */
@@ -382,7 +383,8 @@ form button {
 }
 
 form button:hover {
-    background: #00FFFF; /* Slightly lighter shade */
+    background: #222222;
+    color: #00CCCC;
 }
 
 /* Footer Section */
