@@ -321,10 +321,11 @@ body.no-scroll {
 }
 .description {
     display: flex;
-    align-content: center;
+    flex-direction: column;
+    /* align-content: center; */
     /* justify-items: center; */
-    justify-content: center;
-    position: relative;
+    justify-content: space-between;
+    /* position: relative; */
 }
 
 .slide-caption {
@@ -343,11 +344,13 @@ body.no-scroll {
     /* width: 100%; */
     /* transform: translateY(-50%); */
     /* background: rgb(131, 34, 34); */
-    padding: 2pxpx;
+    margin-left: 80px;
+    padding: 2px;
     height: 3rem;
-    display: flex;
+    /* display: flex; */
     align-items: center;
     justify-content: center;
+    position: relative;
     transition: transform 0.3s ease;
     transform: translateY(0%);
 }
@@ -364,6 +367,10 @@ body.no-scroll {
     color: #00CCCC;
     cursor: pointer;
     margin-right: 10px;
+    /* justify-self: center; */
+    /* align-self: center; */
+    /* justify-content: center; */
+    /* align-items: center; */
     transition: transform 0.3s ease;
 }
 
@@ -373,15 +380,16 @@ body.no-scroll {
 
 .slide-description {
     max-width: 80%;
-    text-align: left;
+    text-align: center;
     opacity: 0;
-    transition: opacity 0.3s ease;
+    /* transition: opacity 0.2s ease; */
 }
 
 .expand-description.active .slide-description {
     opacity: 1;
     transition: transform 0.5s ease;
     transform: translateY(50%);
+    
 }
 
 /* About Us Section */
