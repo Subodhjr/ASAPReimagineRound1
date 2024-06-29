@@ -1,0 +1,55 @@
+@import url(font.css);
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+html,
+body{
+  height: 100%;
+  width: 100%;
+  background-color: rgb(237, 232, 232);
+}
+#main{
+  background-color: rgb(0, 0, 0);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#cursor{
+  height: 15px;
+  width: 15px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  position: fixed;
+ font-size: 5px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ text-align: center;
+z-index: 9;
+}
+#image{
+  height: 40vw;
+  width: 60vw;
+  background-color: aquamarine;
+  position: relative;
+      
+       background-image: url();
+  background-position: center;
+  background-size: cover; 
+}
+#image img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+#overlay{
+  background-color: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 10;
+}
