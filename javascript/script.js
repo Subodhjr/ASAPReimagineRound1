@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', function() {
   gsap.from(".hero-content", {
     opacity: 0,
     duration: 1,
-    y: -50, // optional: animate from top
+    y: 50, // optional: animate from top
     ease: "power2.out", // optional: easing function
     delay: 0.5 // optional: delay before animation starts
   });
@@ -241,3 +241,5 @@ gsap.to(".contact-heading", {
         gsap.to(this.target, { color: "#333", scale: 1 });
     },
 });
+//heading half move left half right
+
