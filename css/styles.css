@@ -25,7 +25,7 @@ header {
     height: 50px;
 }
 .hero-section-text{
-    /* display: block; */
+    display: block;
   text-align: center; /* Or any other alignment you prefer */
   font-size: 3em; /* Adjust as needed */
   font-weight: bold; /* To make it stand out */
