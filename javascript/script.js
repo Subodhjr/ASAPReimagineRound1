@@ -72,9 +72,3 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
-// var h1 = document.querySelector("#top").textContent
-// gsap.to("#top",{
-//     x:100,
-//     duration:10,
-//     delay:5
-// })

@@ -146,13 +146,15 @@ body.no-scroll {
 .herocontent h1 {
     font-size: 3rem;
     margin-bottom: 10px;
-    animation: slideIn 3s forwards;
+    /* animation: slideIn 3s forwards; */
+    /* display: flex; */
+    display: inline-block;
 }
 
 .herocontent p {
     font-size: 1.2rem;
     margin-bottom: 20px;
-    animation: fadeIn 6s forwards;
+    /* animation: fadeIn 6s forwards; */
 }
 
 .hero-btn {
@@ -162,8 +164,8 @@ body.no-scroll {
     text-decoration: none;
     font-size: 1.2rem;
     border-radius: 5px;
-    transition: background 0.3s;
-    animation: fadeIn 7s forwards;
+    /* transition: background 0.3s; */
+    /* animation: fadeIn 7s forwards; */
 }
 
 .hero-btn:hover {
