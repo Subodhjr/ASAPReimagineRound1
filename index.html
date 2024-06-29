@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YATRI MOTORS</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="icon" type="image/png" href="./images/tablogo.png" sizes="128x128">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/bike.css">
@@ -14,10 +17,32 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
 </head>
+
 <body>
     <!-- Header Section -->
-    <header>
+    <header data-aos="zoom-out">
         <div>
+<!-- <<<<<<< animation/add -->
+            <nav class="nav">
+                <div class="logo">
+                    <a href="./index.html"><img src="./images/logo/logo.png" alt="Logo"></a>
+                </div>
+                <div>
+                    <ul class="nav-links">
+                        <li><a id="home-link" href="#home">Home</a></li>
+                        <li><a id="services-link" href="#services">Services</a></li>
+                        <li class="dropdown">
+                            <a id="products-link" href="#products" class="products-link">Products</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="Project0.html">Project Zero</a></li>
+                                <li><a href="Project1.html">Project One</a></li>
+                                <!-- Add more products as needed -->
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+<!-- ======= -->
         <nav class="nav">
             <div class="logo">
                 <a href="./index.html"><img src="./images/logo/logo.png" alt="Logo"></a>
@@ -34,32 +59,39 @@
                         <!-- Add more products as needed -->
                         </ul>
                     </li>
+                </ul>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
         </nav>
+<!-- >>>>>>> main -->
         </div>
     </header>
+    
 
     <!-- Hero Section -->
-    <section id="home" class="hero-section">
+    <section id="home" class="hero-section" data-aos="zoom-out">
         <div class="hero_background">
             <video autoplay loop muted playsinline>
                 <source src="videos/main.mp4" type="video/mp4">
             </video>
         </div>
-        <div class="hero-content">
+        <div class="herocontent">
             <h1>REINVENTING URBAN MOBILITY</h1>
-            <!-- <p>Experience the future of clean, powerful, and connected urban riding with Yatri Motorcycles.</p> -->
+            <p>Experience the future of clean, powerful, and connected urban riding with Yatri Motorcycles.</p>
             <a href="slider.html" class="hero-btn">Our Services</a>
         </div>
-        <div class="hero-container1">
+        <div class="herocontainer1">
             <div class="hero-content1">
-                <a href="#" class="view-all-btn">View All Bikes <span><i class="fa-solid fa-arrow-right"></i></span></a>
+                <a href="#bikes" class="view-all-btn">View All Bikes <span><i class="fa-solid fa-arrow-right"></i></span></a>
             </div>
         </div>
-        
+
     </section>
 
     <!-- bike model -->
-    <div class="page1 page bike" id="Project0">
+<!-- <<<<<<< animation/add -->
+    <div class="page1 page bike" id="Project0" data-aos="fade-up">
         <div class="image-container">
             <img src="images/p0/p0_side.png" alt="SR/S" class="img1">
         </div>
@@ -70,45 +102,274 @@
             <p>0-60KP/H <span>Speed</span></p>
         </div>
     </div>
-    <div class="page2 page bike" id="Project1">
+    <div class="page2 page bike" id="Project1" data-aos="fade-up">
         <div class="image-container">
             <img src="images/p1/p1_b_side.png" alt="SR/F">
+<!-- ======= -->
+     <section id="bikes">
+        <div class="page1 page bike" id="Project0">
+            <div class="image-container">
+                <img src="images/p0/p0_side.png" alt="P0" class="img1">
+            </div>
+            <div class="page-content">
+                <!-- <h2>SR/F</h2> -->
+                <p>230 KM <span>Range</span></p>
+                <p>2HRS <span>Charge</span></p>
+                <p>0-60KP/H <span>Speed</span></p>
+            </div>
+<!-- >>>>>>> main -->
         </div>
-        <div class="page-content">
-            <!-- <h2>SR/F</h2> -->
-            <p>110 KM <span>Range</span></p>
-            <p>2HRS <span>Charge</span></p>
-            <p>19HP <span>Speed</span></p>
+        <div class="page2 page bike" id="Project1">
+            <div class="image-container">
+                <img src="images/p1/p1_b_side.png" alt="P1" class="img2">
+            </div>
+            <div class="page-content">
+                <!-- <h2>SR/F</h2> -->
+                <p>110 KM <span>Range</span></p>
+                <p>2HRS <span>Charge</span></p>
+                <p>19HP <span>Speed</span></p>
+            </div>
         </div>
-    </div>
+     </section>
     <!-- use following div if error comes -->
+<!-- <<<<<<< animation/add -->
+    <!-- </div> -->
+    <!-- gallery -->
+    <section class="slider slide-flex" data-aos="zoom-in">
+        <div class="slides slide-flex-c">
+            <div class="slide-element slide-element-1 slide-flex" data-value="20">
+                <div class="slide-img">
+                    <img src="./images/slider/slider-3.jpg" alt="">
+                </div>
+                <div class="slide-img">
+                    <img src="./images/slider/slider-3.jpg" alt="">
+                </div>
+                <div class="slide-img">
+                    <img src="./images/slider/slider-3.jpg" alt="">
+                </div>
+                <div class="slide-img">
+                    <img src="./images/slider/slider-4.jpg" alt="">
+                </div>
+                <div class="slide-img">
+                    <img src="./images/slider/slider-5.jpg" alt="">
+                </div>
+                <div class="slide-img">
+                    <img src="./images/slider/slider-5.jpg" alt="">
+                </div>
+                <div class="slide-img">
+                    <img src="./images/slider/slider-5.jpg" alt="">
+                </div>
+<!-- ======= -->
 <!-- </div> -->
  <!-- gallery -->
-  
-    <!-- Servicecs Section -->
-    <section id="services" class="services-section">
+ <section class="slider slide-flex" data-aos="zoom-in">
+    <div class="slides slide-flex-c">
+        <div class="slide-element slide-element-1 slide-flex" data-value="20">
+            <div class="slide-img">
+                <img src="./images/slider/slider-3.jpg" alt="">
+            </div>
+            <div class="slide-img">
+                <img src="./images/slider/slider-3.jpg" alt="">
+            </div>
+            <div class="slide-img">
+                <img src="./images/slider/slider-3.jpg" alt="">
+            </div>
+            <div class="slide-img" >
+                <img src="./images/slider/slider-4.jpg" alt="">
+            </div>
+            <div class="slide-img">
+                <img src="./images/slider/slider-5.jpg" alt="">
+            </div>
+            <div class="slide-img">
+                <img src="./images/slider/slider-5.jpg" alt="">
+            </div>
+            <div class="slide-img">
+                <img src="./images/slider/slider-5.jpg" alt="">
+            </div>
+        </div>
+        <div class="slide-element slide-element-2 slide-flex" data-value="20">
+            <div class="slide-img">
+                <img src="./images/slider/slider-3.jpg" alt="">
+            </div>
+            <div class="slide-img">
+                <img src="./images/slider/slider-3.jpg" alt="">
+            </div>
+            <div class="slide-img">
+                <img src="./images/slider/slider-3.jpg" alt="">
+            </div>
+            <div class="slide-img">
+                <img src="./images/slider/slider-4.jpg" alt="">
+            </div>
+            <div class="slide-img">
+                <img src="./images/slider/slider-5.jpg" alt="">
+            </div>
+            <div class="slide-img">
+                <img src="./images/slider/slider-5.jpg" alt="">
+            </div>
+            <div class="slide-img">
+                <img src="./images/slider/slider-5.jpg" alt="">
+            </div>
+        </div>
+        <div class="slide-element slide-element-3 slide-flex" data-value="20">
+            <div class="slide-img">
+                <img src="./images/slider/slider-3.jpg" alt="">
+            </div>
+            <div class="slide-img">
+                <img src="./images/slider/slider-3.jpg" alt="">
+            </div>
+            <div class="slide-img">
+                <img src="./images/slider/slider-3.jpg" alt="">
+            </div>
+            <div class="slide-img">
+                <img src="./images/slider/slider-4.jpg" alt="">
+            </div>
+            <div class="slide-img">
+                <img src="./images/slider/slider-5.jpg" alt="">
+            </div>
+            <div class="slide-img">
+                <img src="./images/slider/slider-5.jpg" alt="">
+            </div>
+            <div class="slide-img">
+                <img src="./images/slider/slider-5.jpg" alt="">
+            </div>
+        </div>
+        <div class="slide-element slide-element-4 slide-flex" data-value="20">
+            <div class="slide-img">
+                <img src="./images/slider/slider-3.jpg" alt="">
+            </div>
+            <div class="slide-img">
+                <img src="./images/slider/slider-3.jpg" alt="">
+            </div>
+            <div class="slide-img">
+                <img src="./images/slider/slider-3.jpg" alt="">
+<!-- >>>>>>> main -->
+            </div>
+            <div class="slide-element slide-element-2 slide-flex" data-value="20">
+                <div class="slide-img">
+                    <img src="./images/slider/slider-3.jpg" alt="">
+                </div>
+                <div class="slide-img">
+                    <img src="./images/slider/slider-3.jpg" alt="">
+                </div>
+                <div class="slide-img">
+                    <img src="./images/slider/slider-3.jpg" alt="">
+                </div>
+                <div class="slide-img">
+                    <img src="./images/slider/slider-4.jpg" alt="">
+                </div>
+                <div class="slide-img">
+                    <img src="./images/slider/slider-5.jpg" alt="">
+                </div>
+                <div class="slide-img">
+                    <img src="./images/slider/slider-5.jpg" alt="">
+                </div>
+                <div class="slide-img">
+                    <img src="./images/slider/slider-5.jpg" alt="">
+                </div>
+            </div>
+            <div class="slide-element slide-element-3 slide-flex" data-value="20">
+                <div class="slide-img">
+                    <img src="./images/slider/slider-3.jpg" alt="">
+                </div>
+                <div class="slide-img">
+                    <img src="./images/slider/slider-3.jpg" alt="">
+                </div>
+                <div class="slide-img">
+                    <img src="./images/slider/slider-3.jpg" alt="">
+                </div>
+                <div class="slide-img">
+                    <img src="./images/slider/slider-4.jpg" alt="">
+                </div>
+                <div class="slide-img">
+                    <img src="./images/slider/slider-5.jpg" alt="">
+                </div>
+                <div class="slide-img">
+                    <img src="./images/slider/slider-5.jpg" alt="">
+                </div>
+                <div class="slide-img">
+                    <img src="./images/slider/slider-5.jpg" alt="">
+                </div>
+            </div>
+            <div class="slide-element slide-element-4 slide-flex" data-value="20">
+                <div class="slide-img">
+                    <img src="./images/slider/slider-3.jpg" alt="">
+                </div>
+                <div class="slide-img">
+                    <img src="./images/slider/slider-3.jpg" alt="">
+                </div>
+                <div class="slide-img">
+                    <img src="./images/slider/slider-3.jpg" alt="">
+                </div>
+                <div class="slide-img">
+                    <img src="./images/slider/slider-4.jpg" alt="">
+                </div>
+                <div class="slide-img">
+                    <img src="./images/slider/slider-5.jpg" alt="">
+                </div>
+                <div class="slide-img">
+                    <img src="./images/slider/slider-5.jpg" alt="">
+                </div>
+                <div class="slide-img">
+                    <img src="./images/slider/slider-5.jpg" alt="">
+                </div>
+            </div>
+            <div class="slide-element slide-element-5 slide-flex" data-value="20">
+                <div class="slide-img">
+                    <img src="./images/slider/slider-3.jpg" alt="">
+                </div>
+                <div class="slide-img">
+                    <img src="./images/slider/slider-3.jpg" alt="">
+                </div>
+                <div class="slide-img">
+                    <img src="./images/slider/slider-3.jpg" alt="">
+                </div>
+                <div class="slide-img">
+                    <img src="./images/slider/slider-4.jpg" alt="">
+                </div>
+                <div class="slide-img">
+                    <img src="./images/slider/slider-5.jpg" alt="">
+                </div>
+                <div class="slide-img">
+                    <img src="./images/slider/slider-5.jpg" alt="">
+                </div>
+                <div class="slide-img">
+                    <img src="./images/slider/slider-5.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="overlay slide-flex">
+            <button>Explore</button>
+        </div>
+    </section>
+    <!-- Servicecds Section -->
+    <section id="services" class="services-section" data-aos="zoom-out">
         <h2>Our Services</h2>
         <div class="services-container">
             <div class="service-item">
                 <i class="fa-solid fa-motorcycle"></i>
                 <h3>Innovative Electric Motorcycles</h3>
-                <p>Yatri Motorcycles offers cutting-edge electric bikes like Project Zero and Project One, featuring sleek designs, impressive range, and advanced connectivity, perfect for both urban commuting and high-performance rides.</p>
+                <p>Yatri Motorcycles offers cutting-edge electric bikes like Project Zero and Project One, featuring
+                    sleek designs, impressive range, and advanced connectivity, perfect for both urban commuting and
+                    high-performance rides.</p>
             </div>
             <div class="service-item">
                 <i class="fa-solid fa-bolt"></i>
                 <h3>Advanced Battery Technology</h3>
-                <p>Yatri Motorcycles use cutting-edge Lithium-Nickel-Manganese battery cells for enhanced energy density and efficiency. The battery pack in Project Zero holds 8 kWh of energy, while Project One features a 3 kWh battery, both offering rapid charging capabilities and long-lasting performance​.</p>
+                <p>Yatri Motorcycles use cutting-edge Lithium-Nickel-Manganese battery cells for enhanced energy density
+                    and efficiency. The battery pack in Project Zero holds 8 kWh of energy, while Project One features a
+                    3 kWh battery, both offering rapid charging capabilities and long-lasting performance​.</p>
             </div>
             <div class="service-item">
                 <i class="fa-solid fa-plug"></i>
                 <h3>Comprehensive Connectivity and Support</h3>
-                <p>Yatri Energy provides a network of fast-charging stations and a subscription plan to make charging hassle-free and economical.</p>
+                <p>Yatri Energy provides a network of fast-charging stations and a subscription plan to make charging
+                    hassle-free and economical.</p>
             </div>
         </div>
     </section>
 
     <!-- Slider Section -->
-    <section id="products" class="slider-section">
+    <section id="products" class="slider-section" data-aos="zoom-in-left">
         <div class="slider">
             <div class="slide-item">
                 <div class="slide-content">
@@ -149,14 +410,24 @@
     </section>
 
     <!-- About Us Section -->
-    <section id="about" class="about-section">
+<!-- <<<<<<< animation/add -->
+    <section id="about" class="about-section" data-aos="zoom-in-down">
         <h2>About Us</h2>
         <p>Information about the company.</p>
+<!-- ======= -->
+    <section id="about" class="about-section">
+        <!-- <h2>About Us</h2> -->
+        <p>At Yatri Motorcycles, we are dedicated to transforming urban mobility through innovative electric motorcycles that blend cutting-edge technology, exceptional performance, and sustainable design.</p>
+<!-- >>>>>>> main -->
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact-section">
+    <section id="contact" class="contact-section" data-aos="zoom-up">
+<!-- <<<<<<< animation/add -->
+        <h2 class="contact-heading">Contact Us</h2>
+<!-- ======= -->
         <h2>Contact Us</h2>
+<!-- >>>>>>> main -->
         <form>
             <label for="name">Name</label>
             <input type="text" id="name" name="name">
@@ -164,7 +435,7 @@
             <input type="email" id="email" name="email">
             <label for="message">Message</label>
             <textarea id="message" name="message"></textarea>
-            <button type="submit">Send</button>
+            <button type="submit" class="contact-btn">Send</button> <!-- Add class for targeting -->
         </form>
     </section>
 
@@ -175,10 +446,37 @@
     <script src="https://kit.fontawesome.com/2eafab8a0c.js" crossorigin="anonymous"></script>
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- our aos data -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 120,
+        duration: 1000,
+      });
+    </script>
     <!-- Slick Slider JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <!-- Custom Script -->
+<!-- <<<<<<< animation/add -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    
+<!-- ======= -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<!-- >>>>>>> main -->
     <script src="./javascript/script.js"></script>
+    <script src="./javascript/animation.js"></script>
     <script src="./javascript/slider.js"></script>
+    <!-- our aos data -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 120,
+            duration: 1000,
+        });
+    </script>
+
 </body>
+
 </html>
