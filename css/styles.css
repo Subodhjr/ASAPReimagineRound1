@@ -6,13 +6,15 @@
     scroll-behavior: smooth;
     letter-spacing: 2px;
 }
-
+html,
 body {
     font-family: 'Barlow', sans-serif;
     color: #ffffff;
     background-color: #000000;
     line-height: 1.6;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
+    height: 100%;
+    width: 100%;
 }
 
 header {
@@ -210,7 +212,8 @@ body.no-scroll {
 }
 
 .view-all-btn:hover {
-    background-color: #0056b3; /* Darker blue on hover */
+    background-color: #0057b300; /* Darker blue on hover */
+    color: #00CCCC;
 }
 
 /* Keyframe Animations */
