@@ -28,19 +28,22 @@
                 </div>
                 <div>
                     <ul class="nav-links">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#services">Services</a></li>
+                        <li><a id="home-link" href="#home">Home</a></li>
+                        <li><a id="services-link" href="#services">Services</a></li>
                         <li class="dropdown">
-                            <a href="#products" class="products-link">Products</a>
+                            <a id="products-link" href="#products" class="products-link">Products</a>
                             <ul class="dropdown-menu">
                                 <li><a href="Project0.html">Project Zero</a></li>
                                 <li><a href="Project1.html">Project One</a></li>
                                 <!-- Add more products as needed -->
                             </ul>
                         </li>
+                    </ul>
+                </div>
             </nav>
         </div>
     </header>
+    
 
     <!-- Hero Section -->
     <section id="home" class="hero-section" data-aos="zoom-out">
@@ -286,7 +289,7 @@
 
     <!-- Contact Section -->
     <section id="contact" class="contact-section" data-aos="zoom-up">
-        <h2>Contact Us</h2>
+        <h2 class="contact-heading">Contact Us</h2>
         <form>
             <label for="name">Name</label>
             <input type="text" id="name" name="name">
@@ -294,7 +297,7 @@
             <input type="email" id="email" name="email">
             <label for="message">Message</label>
             <textarea id="message" name="message"></textarea>
-            <button type="submit">Send</button>
+            <button type="submit" class="contact-btn">Send</button> <!-- Add class for targeting -->
         </form>
     </section>
 

@@ -23,6 +23,25 @@ header {
     top: 0; /* Ensure navbar starts at the top of the page */
     height: 50px;
 }
+.service-item {
+    /* Initial styles */
+    transform: scale(1);
+    transition: transform 0.3s ease;
+    /* Other styles like padding, background, etc. */
+}
+.image-container {
+    transform-origin: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #000;
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+.nav-links a:hover {
+    color: #ff6347; /* Change color on hover */
+}
 
 
 nav {
@@ -96,6 +115,30 @@ nav.nav{
 
 .nav-links a:hover {
     color: #aaaaaa;
+}
+.contact-heading {
+    color: #333;
+    transition: color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+.contact-heading:hover {
+    color: #f00;
+    transform: scale(1.1);
+}
+
+.contact-btn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-btn:hover {
+    background-color: #f00;
+    transform: scale(1.1);
 }
 
 /* Hamburger Menu */

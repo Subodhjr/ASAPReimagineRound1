@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', function() {
         opacity: 0,
         y: 50,
         duration: 1,
-        stagger: 0.4, // Stagger the animations of the paragraphs
+        stagger: 0.4, 
         ease: "power3.out"
     });
 });
@@ -102,70 +102,142 @@ document.addEventListener('DOMContentLoaded', function() {
      // Select the page2 element
         const page2 = document.querySelector(".page2");
     
-        // Define the animation for the page-content elements inside page2
         gsap.from(".page2 .page-content p", {
             scrollTrigger: {
                 trigger: page2,
-                start: "top 80%", // Trigger animation when top of the element is 80% from the top of viewport
-                end: "bottom 20%", // End animation when bottom of the element is 20% from the top of viewport
-                toggleActions: "play none none reset", // Reset animation on each scroll into view
+                start: "top 80%", 
+                end: "bottom 20%",
+                toggleActions: "play none none reset", 
             },
             opacity: 0,
             y: 50,
             duration: 1,
-            ease: "power4.out",
-            stagger: 0.5, // Add stagger for a more natural effect
+            ease: "power2.out",
+            stagger: 0.4, 
         });
         
-            // // Select the image-container element
-            // const imageContainer = document.querySelector(".image-container");
-        
-            // // Define the rotation animation for the image
-            // gsap.from(".image-container img", {
-            //     scrollTrigger: {
-            //         trigger: imageContainer,
-            //         start: "top 80%", // Trigger animation when top of the element is 80% from the top of viewport
-            //         end: "bottom 20%",
-            
-            //         toggleActions: "play none none reset", // Reset animation on each scroll into view
-            //     },
-            //     rotationY: 360, // Rotate 360 degrees
-            //     duration: 2, // Animation duration
-            //     ease: "power3.out", // Easing function
-            // });
             document.addEventListener("DOMContentLoaded", function() {
                 gsap.registerPlugin(ScrollTrigger);
             
-                // Select the image element
                 const image = document.querySelector(".image-container img");
             
-                // Define the rotation animation for the image
+                // Define the rotation animation for the image1
                 gsap.from(image, {
                     scrollTrigger: {
                         trigger: image,
-                        start: "top 80%", // Trigger animation when top of the image is 80% from the top of viewport
-                        end: "bottom 20%", // End animation when bottom of the image is 20% from the top of viewport
+                       
                         toggleActions: "play none none reset", // Reset animation on each scroll into view
                     },
-                    rotationY: 360, // Rotate 360 degrees
-                    duration: 4,
-                    ease: "power2.out", // Ease type
+                  
                 });
             });
-            document.addEventListener("DOMContentLoaded", function() {
-                // Select the image inside .image-container
-                gsap.registerPlugin(ScrollTrigger);
-                const ima = document.querySelector("page2 page bike #Project1 .image-container img");
-                gsap.from(ima, {
-                    scrollTrigger: {
-                        trigger: ima,
-                        start: "top 80%", // Trigger animation when top of the image is 80% from the top of viewport
-                        end: "bottom 20%", // End animation when bottom of the image is 20% from the top of viewport
-                        toggleActions: "play none none reset", // Reset animation on each scroll into view
-                    },
-                    rotationY: 360, // Rotate 360 degrees
-                    duration: 4,
-                    ease: "power2.out", // Ease type
-                });
-                });
+          // Animation for Project Zero 
+          gsap.to('#Project0 .image-container img', {
+            rotationY: 360,
+            ease: "none",
+            scrollTrigger: {
+                trigger: "#Project0",
+                start: "top center",
+                end: "bottom center",
+                scrub: true,
+              
+            }
+        });
         
+            // Animation for Project One
+            gsap.fromTo('#Project1 .image-container img', {
+                rotation: 0
+            }, {
+                rotationY: -360,
+                ease: "power3.out",
+                scrollTrigger: {
+                    trigger: "#Project1",
+                    start: "top center",
+                    end: "bottom center",
+                    scrub: true,
+                    markers: false 
+                }
+            });
+
+// Hover effect using GSAP
+const serviceItem = document.querySelectorAll('.service-item');
+
+serviceItem.forEach(item => {
+    item.addEventListener('mouseenter', () => {
+        gsap.to(item, { scale: 1.1, duration: 0.3 });
+    });
+
+    item.addEventListener('mouseleave', () => {
+        gsap.to(item, { scale: 1, duration: 0.3 });
+    });
+});
+
+
+
+// Hover effect using GSAP
+const serviceItems = document.querySelectorAll('.service-item');
+
+serviceItems.forEach(item => {
+    item.addEventListener('mouseenter', () => {
+        gsap.to(item, { scale: 1.1, duration: 0.3 });
+    });
+
+    item.addEventListener('mouseleave', () => {
+        gsap.to(item, { scale: 1, duration: 0.3 });
+    });
+});
+// GSAP hover animation for header
+
+// GSAP hover animations for header links
+gsap.utils.toArray('.nav-links a').forEach(link => {
+    let hoverAnimation = gsap.timeline({ paused: true });
+    
+    hoverAnimation.to(link, {
+        scale: 1.1,
+        color: "#ff6347",
+        duration: 0.3,
+        ease: "power2.inOut"
+    });
+    
+    hoverAnimation.to(link, {
+        scale: 1,
+        color: "#000",
+        duration: 0.3,
+        ease: "power2.inOut"
+    });
+    
+    link.addEventListener("mouseenter", () => {
+        hoverAnimation.play();
+    });
+    
+    link.addEventListener("mouseleave", () => {
+        hoverAnimation.reverse();
+    });
+});
+//hover effect for contact section
+gsap.to(".contact-btn", {
+    duration: 0.3,
+    scale: 1,
+    ease: "power2.inOut",
+    overwrite: "auto",
+    // Hover scale effect
+    onHover: function () {
+        gsap.to(this.target, { scale: 1.1 });
+    },
+    onLeave: function () {
+        gsap.to(this.target, { scale: 1 });
+    },
+});
+gsap.to(".contact-heading", {
+    duration: 0.3,
+    scale: 1,
+    ease: "power2.inOut",
+    overwrite: "auto",
+    // Hover color and scale effect
+    onHover: function () {
+        gsap.to(this.target, { color: "#f00", scale: 1.1 });
+    },
+    onLeave: function () {
+        gsap.to(this.target, { color: "#333", scale: 1 });
+    },
+});
