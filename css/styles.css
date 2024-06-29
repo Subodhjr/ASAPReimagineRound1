@@ -18,12 +18,24 @@ body {
 
 header {
     background: rgba(0, 0, 0, 0); /* Black background */
-    position: fixed;
+    /* position: fixed; */
     width: 100%;
     z-index: 1000;
     top: 0; /* Ensure navbar starts at the top of the page */
     height: 50px;
 }
+.hero-section-text{
+    /* display: block; */
+  text-align: center; /* Or any other alignment you prefer */
+  font-size: 3em; /* Adjust as needed */
+  font-weight: bold; /* To make it stand out */
+  color: #fff; /* Assuming a dark background */
+  /* margin-top: 20px;  */
+}
+.hero-section-text h1 {
+    margin-bottom: 0.2rem; /* Reset default margins */
+    padding: 10px 0; /* Add padding to top and bottom, adjust as needed */
+  }
 .service-item {
     /* Initial styles */
     transform: scale(1);
@@ -802,4 +814,9 @@ footer {
     height: 100vh;
     /* background-color: olive; */
 }
-
+.about-section p{
+    font-weight: 700;
+}
+.page-content p{
+    font-weight: 700;
+}
