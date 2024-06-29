@@ -33,8 +33,8 @@ header {
   /* margin-top: 20px;  */
 }
 .hero-section-text .head1 {
-    margin-bottom: 0.2rem; /* Reset default margins */
-    padding-top: 10px; /* Add padding to top and bottom, adjust as needed */
+    margin-bottom: 0.01rem; /* Reset default margins */
+    padding-top: 5px; /* Add padding to top and bottom, adjust as needed */
   }
   .hero-section-text .head2 {
     margin-bottom: 0.2rem; /* Reset default margins */
