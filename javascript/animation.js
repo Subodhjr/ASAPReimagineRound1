@@ -12,7 +12,7 @@ gsap.to("#home .herocontent h1",{
 })
 gsap.to("#home .herocontent p",{
     x:500,
-    duration:1,
+    duration:0.5,
     opacity:0,
     scrollTrigger:{
         trigger:"#home .herocontent p",
@@ -35,48 +35,61 @@ gsap.to("#home .herocontent .hero-btn",{
         scrub:2,
     }
 })
-document.addEventListener("DOMContentLoaded", function () {
-    gsap.registerPlugin(ScrollTrigger);
+gsap.to("#about p",{
+    transform:"translateX(-680%)",
+    ease: "slow(0.7,0.7,false)",
+    scrollTrigger:{
+        trigger:"#about",
+        scroller:"body",
+        markers:true,
+        start:"top 0%",
+        end:"top -400%",
+        scrub:2,
+        pin:true
+    }
+})
+// document.addEventListener("DOMContentLoaded", function () {
+//     gsap.registerPlugin(ScrollTrigger);
 
-    // Animation for each bike section
-    gsap.from("#bike", {
-        opacity: 0,
-        y: 50,
-        duration: 1,
-        stagger: 0.3,
-        scrollTrigger: {
-            trigger: "#bike",
-            start: "top 80%",
-            end: "bottom 20%",
-            scrub: true,
-        },
-    });
+//     // Animation for each bike section
+//     gsap.from("#bike", {
+//         opacity: 0,
+//         y: 50,
+//         duration: 1,
+//         stagger: 0.3,
+//         scrollTrigger: {
+//             trigger: "#bike",
+//             start: "top 80%",
+//             end: "bottom 20%",
+//             scrub: true,
+//         },
+//     });
 
-    // Animation for images
-    gsap.from("#bikes .image-container img", {
-        scale: 0.8,
-        opacity: 0,
-        duration: 1.5,
-        ease: "power4.out",
-        scrollTrigger: {
-            trigger: "#bikes .image-container",
-            start: "top 80%",
-            end: "bottom 20%",
-            scrub: true,
-        },
-    });
+//     // Animation for images
+//     gsap.from("#bikes .image-container img", {
+//         scale: 0.8,
+//         opacity: 0,
+//         duration: 1.5,
+//         ease: "power4.out",
+//         scrollTrigger: {
+//             trigger: "#bikes .image-container",
+//             start: "top 80%",
+//             end: "bottom 20%",
+//             scrub: true,
+//         },
+//     });
 
-    // Animation for text
-    gsap.from("#bikes .page-content p", {
-        opacity: 0,
-        y: 30,
-        duration: 1,
-        stagger: 0.2,
-        scrollTrigger: {
-            trigger: "#bikes .page-content",
-            start: "top 80%",
-            end: "bottom 20%",
-            scrub: true,
-        },
-    });
-});
+//     // Animation for text
+//     gsap.from("#bikes .page-content p", {
+//         opacity: 0,
+//         y: 30,
+//         duration: 1,
+//         stagger: 0.2,
+//         scrollTrigger: {
+//             trigger: "#bikes .page-content",
+//             start: "top 80%",
+//             end: "bottom 20%",
+//             scrub: true,
+//         },
+//     });
+// });
