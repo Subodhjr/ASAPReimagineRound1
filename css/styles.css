@@ -133,7 +133,7 @@ body.no-scroll {
     height: 100%;
     object-fit: cover;
 }
-.hero-content {
+.herocontent {
     position: absolute;
     top: 50%; /* Adjust vertical positioning as needed */
     left: 50%; /* Adjust horizontal positioning as needed */
@@ -143,13 +143,13 @@ body.no-scroll {
     z-index: 1; /* Ensure z-index works correctly */
 }
 
-.hero-content h1 {
+.herocontent h1 {
     font-size: 3rem;
     margin-bottom: 10px;
     animation: slideIn 3s forwards;
 }
 
-.hero-content p {
+.herocontent p {
     font-size: 1.2rem;
     margin-bottom: 20px;
     animation: fadeIn 6s forwards;
@@ -170,7 +170,7 @@ body.no-scroll {
     background: #000000;
     color: #3f6868;
 }
-.hero-container1 {
+.herocontainer1 {
     position: relative;
     width: 100%;
     height: 100vh;
@@ -193,6 +193,7 @@ body.no-scroll {
     font-size: 2.5rem; /* Example font size */
     font-weight: bold;
     margin-bottom: 10px;
+    display: inline-block;
 }
 
 .hero-content1 p {
