@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YATRI MOTORS</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="icon" type="image/png" href="./images/tablogo.png" sizes="128x128">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/bike.css">
@@ -16,7 +17,7 @@
 </head>
 <body>
     <!-- Header Section -->
-    <header>
+    <header data-aos="zoom-out">
         <div>
         <nav class="nav">
             <div class="logo">
@@ -43,7 +44,7 @@
     </header>
 
     <!-- Hero Section -->
-    <section id="home" class="hero-section">
+    <section id="home" class="hero-section" data-aos="zoom-out">
         <div class="hero_background">
             <video autoplay loop muted playsinline>
                 <source src="videos/main.mp4" type="video/mp4">
@@ -64,7 +65,7 @@
 
     <!-- bike model -->
      <section id="bikes">
-        <div class="page1 page bike" id="Project0">
+        <div class="page1 page bike" id="Project0" data-aos="fade-up">
             <div class="image-container">
                 <img src="images/p0/p0_side.png" alt="P0" class="img1">
             </div>
@@ -75,7 +76,7 @@
                 <p>0-60KP/H <span>Speed</span></p>
             </div>
         </div>
-        <div class="page2 page bike" id="Project1">
+        <div class="page2 page bike" id="Project1" data-aos="fade-up">
             <div class="image-container">
                 <img src="images/p1/p1_b_side.png" alt="P1" class="img2">
             </div>
@@ -90,7 +91,7 @@
     <!-- use following div if error comes -->
 <!-- </div> -->
  <!-- gallery -->
- <section class="slider slide-flex">
+ <section class="slider slide-flex" data-aos="zoom-in">
     <div class="slides slide-flex-c">
         <div class="slide-element slide-element-1 slide-flex" data-value="20">
             <div class="slide-img">
@@ -213,7 +214,7 @@
     </div>
  </section>
     <!-- Servicecds Section -->
-    <section id="services" class="services-section">
+    <section id="services" class="services-section" data-aos="zoom-out">
         <h2>Our Services</h2>
         <div class="services-container">
             <div class="service-item">
@@ -235,7 +236,7 @@
     </section>
 
     <!-- Slider Section -->
-    <section id="products" class="slider-section">
+    <section id="products" class="slider-section" data-aos="zoom-in-left">
         <div class="slider">
             <div class="slide-item">
                 <div class="slide-content">
@@ -276,13 +277,13 @@
     </section>
 
     <!-- About Us Section -->
-    <section id="about" class="about-section">
+    <section id="about" class="about-section" data-aos="zoom-in-down">
         <h2>About Us</h2>
         <p>Information about the company.</p>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact-section">
+    <section id="contact" class="contact-section" data-aos="zoom-up">
         <h2>Contact Us</h2>
         <form>
             <label for="name">Name</label>
@@ -302,6 +303,14 @@
     <script src="https://kit.fontawesome.com/2eafab8a0c.js" crossorigin="anonymous"></script>
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- our aos data -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 120,
+        duration: 1000,
+      });
+    </script>
     <!-- Slick Slider JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <!-- Custom Script -->
