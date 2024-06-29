@@ -81,7 +81,7 @@ nav.nav{
     display: flex;
     align-items: center;
     margin-left: auto;
-    padding-right: 30px;
+    padding-right: 100px;
     letter-spacing: 2px;
 }
 .nav-links li {
