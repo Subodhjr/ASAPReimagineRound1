@@ -6,13 +6,12 @@
     scroll-behavior: smooth;
     letter-spacing: 2px;
 }
-html,
 body {
     font-family: 'Barlow', sans-serif;
     color: #ffffff;
     background-color: #000000;
     line-height: 1.6;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
     height: 100%;
     width: 100%;
 }
