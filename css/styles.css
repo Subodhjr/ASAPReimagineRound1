@@ -17,7 +17,7 @@ body {
 
 header {
     background: rgba(0, 0, 0, 0); /* Black background */
-    position: fixed;
+    /* position: fixed; */
     width: 100%;
     z-index: 1000;
     top: 0; /* Ensure navbar starts at the top of the page */
