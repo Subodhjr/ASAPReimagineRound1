@@ -27,14 +27,18 @@ header {
 .hero-section-text{
     display: block;
   text-align: center; /* Or any other alignment you prefer */
-  font-size: 3em; /* Adjust as needed */
+  font-size: 3rem; /* Adjust as needed */
   font-weight: bold; /* To make it stand out */
   color: #fff; /* Assuming a dark background */
   /* margin-top: 20px;  */
 }
-.hero-section-text h1 {
+.hero-section-text .head1 {
     margin-bottom: 0.2rem; /* Reset default margins */
-    padding: 10px 0; /* Add padding to top and bottom, adjust as needed */
+    padding-top: 10px; /* Add padding to top and bottom, adjust as needed */
+  }
+  .hero-section-text .head2 {
+    margin-bottom: 0.2rem; /* Reset default margins */
+    padding-bottom: 50px; /* Add padding to top and bottom, adjust as needed */
   }
 .service-item {
     /* Initial styles */
@@ -532,6 +536,9 @@ footer {
 
 /* Media Queries */
 @media (max-width: 800px) {
+    body{
+        overflow-x: hidden;
+    }
     header{
         border-radius: 30px;
         padding: 0 100px;
