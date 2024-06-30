@@ -6,75 +6,78 @@ body{
     height: 100%;
     width: 100%;
 } */
-.slide-flex{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.slide-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.slide-flex-c{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+.slide-flex-c {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
-.slider{
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    /* background-color: blue; */
-    overflow: hidden;
+.slider {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  /* background-color: blue; */
+  overflow: hidden;
 }
-.slides{
-    width: 100%;
-    height: 250vh;
-    /* background-color: aqua; */
-    rotate: -20deg;
-    gap: 2vh;
+.slides {
+  width: 100%;
+  height: 250vh;
+  /* background-color: aqua; */
+  rotate: -20deg;
+  gap: 2vh;
 }
-.slide-element{
-    width: 250%;
-    height: 40vh;
-    /* use this for checking the border radius  */
-    /* background-color: blueviolet; */
-    gap: 2vh;
+.slide-element {
+  width: 250%;
+  height: 40vh;
+  /* use this for checking the border radius  */
+  /* background-color: blueviolet; */
+  gap: 2vh;
 }
-.slide-img{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 25vw;
-    height: 100%;
-    /* use this for checking the border radius  */
-    /* background-color: brown; */
-    border-radius: 20px;
-    overflow: hidden;
+.slide-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25vw;
+  height: 100%;
+  /* use this for checking the border radius  */
+  /* background-color: brown; */
+  border-radius: 20px;
+  overflow: hidden;
 }
-.slide-img img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.slide-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
-.overlay{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background-image: url(../images/slider/noise.png);
-    background-size: cover;
-    background-position: center;
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: url(../images/slider/noise.png);
+  background-size: cover;
+  background-position: center;
 }
-.overlay button{
-    padding: 1.2vw 2vw;
-    border-radius: 50px;
-    background: transparent;
-    border: 2px solid #fff;
-    outline: none;
-    color: #fff;
+.overlay button {
+  padding: 1.2vw 2vw;
+  border-radius: 50px;
+  background: transparent;
+  border: 2px solid #fff;
+  outline: none;
+  color: #fff;
 }
-.slide-element-1,.slide-element-3,.slide-element-5{
-    transition: all ease 0.8s;
+.slide-element-1,
+.slide-element-3,
+.slide-element-5 {
+  transition: all ease 0.8s;
 }
-.slide-element-2,.slide-element-4{
-    transition: all ease 0.5s;
+.slide-element-2,
+.slide-element-4 {
+  transition: all ease 0.5s;
 }
