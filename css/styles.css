@@ -20,12 +20,13 @@ header {
   background: rgba(0, 0, 0, 0); /* Black background */
   /* position: fixed; */
   width: 100%;
-  /* z-index: 1000; */
+  z-index: 1001;
   top: 0; /* Ensure navbar starts at the top of the page */
   height: 50px;
 }
 .nav {
-  z-index: 100;
+  z-index: 1001;
+  /* max-height: 10vh; */
 }
 .nav-links a {
   text-decoration: none;
@@ -43,6 +44,7 @@ nav {
   justify-content: center;
   font-weight: 400;
   align-items: center;
+  z-index: 1001;
   /* size: 750px; */
   /* background-color: black; */
   /* box-shadow: gray; */
@@ -60,6 +62,7 @@ nav.nav {
   /* border-style: solid; */
   height: 50px;
   margin: auto;
+  z-index: 1001;
 }
 @keyframes scaleIn {
   0% {
@@ -110,6 +113,9 @@ nav.nav {
 }
 .hero-section {
   z-index: 1;
+  height: 100vh;
+  /* z-index: 1; */
+  position: relative;
 }
 .hero-section-text {
   display: block;
@@ -119,6 +125,15 @@ nav.nav {
   color: #fff; /* Assuming a dark background */
   /* margin-top: 20px;  */
 }
+.hero-section video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
 .hero-section-text .head1 {
   margin-bottom: 0.01rem; /* Reset default margins */
   padding-top: 5px; /* Add padding to top and bottom, adjust as needed */
@@ -127,9 +142,18 @@ nav.nav {
   margin-bottom: 0.2rem; /* Reset default margins */
   padding-bottom: 50px; /* Add padding to top and bottom, adjust as needed */
 }
-#home .hero_background {
+.herocontent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 1;
+  }
+/* #home .hero_background {
   z-index: 0;
-}
+} */
 .service-item {
   /* Initial styles */
   transform: scale(1);
@@ -188,6 +212,7 @@ body.no-scroll {
   color: white;
   position: relative; /* Ensure z-index works correctly */
   overflow: hidden;
+  z-index: 0;
 }
 
 .hero-section video {
@@ -754,6 +779,8 @@ footer {
 /* Dropdown Menu Styles */
 .dropdown {
   position: relative;
+  z-index: 9998;
+  padding-right: 5vh;
 }
 
 .dropdown-menu {
@@ -764,11 +791,13 @@ footer {
   background-color: #000;
   min-width: 170px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  z-index: 100;
+  z-index: 9999 !important;
   transition: opacity 0.3s ease;
   opacity: 0;
+  /* transform: translateZ(0); */
   visibility: hidden;
   border-radius: 20px;
+  /* z-index: 1002; */
 }
 
 .dropdown-menu li {
@@ -790,6 +819,7 @@ footer {
 .dropdown:hover .dropdown-menu {
   display: block;
   opacity: 1;
+  /* z-index: 1000; */
   visibility: visible;
 }
 

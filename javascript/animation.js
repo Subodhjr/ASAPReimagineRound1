@@ -36,14 +36,14 @@ gsap.to("#home .herocontent .hero-btn", {
   },
 });
 gsap.to("#about p", {
-  transform: "translateX(-150%)",
+  transform: "translateX(-500%)",
   ease: "slow(0.7,0.7,false)",
   scrollTrigger: {
     trigger: "#about",
     scroller: "body",
     // markers:true,
     start: "top 0%",
-    end: "top -150%",
+    end: "top -250%",
     scrub: 2,
     pin: true,
   },
@@ -93,3 +93,18 @@ gsap.to("#about p", {
 //         },
 //     });
 // });
+
+// function breakText(){
+//     var p = document.querySelector(".about-section p")
+//     var p1 = p.textContent
+//     var splittedword = p1.split(" ")
+//     var cut=""
+//     splittedword.forEach(function(e){
+//     cut= cut + " " + `<span class="a">${e}</span>`
+//     })
+//     p.innerHTML = cut
+// }
+// breakText()
+// gsap.from("p span",{
+
+// })
