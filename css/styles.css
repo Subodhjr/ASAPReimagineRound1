@@ -814,4 +814,52 @@ footer {
     height: 100vh;
     /* background-color: olive; */
 }
+/* project 0 css */
+.image-specs-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  background-color: #ffffff;
+}
 
+.image-specs-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.neutralize {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  bottom: 10%;
+  transform: translateY(50%);
+}
+
+.neutralize li {
+  margin: 0 5px; /* Adjust spacing between columns as needed */
+  text-align: center;
+  flex: 1;
+  font-weight: bold;
+}
+
+/* Different font sizes for each list item */
+.neutralize li:nth-child(1) {
+  font-size: 1.8em; /* Example: 1.2em for the first item */
+}
+
+.neutralize li:nth-child(2) {
+  font-size: 1.9em; /* Example: 1.5em for the second item */
+}
+
+.neutralize li:nth-child(3) {
+  font-size: 1.8em; /* Example: 1.8em for the third item */
+}

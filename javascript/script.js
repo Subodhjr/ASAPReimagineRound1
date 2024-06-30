@@ -242,4 +242,24 @@ gsap.to(".contact-heading", {
     },
 });
 //heading half move left half right
+//animation for project 0
+    
 
+// Wait for the DOM content to be fully loaded
+document.addEventListener('DOMContentLoaded', function() {
+    // Select the product description element
+    const productDescription = document.getElementById('product-description');
+
+    // Create a GSAP timeline for the fade-in animation
+    gsap.from(productDescription, {
+        opacity: 0,                    // Start from opacity 0 (invisible)
+        y: 200,                         // Move 20px downward
+        duration: 1.5,                   // Animation duration in seconds
+        scrollTrigger: {
+            trigger: productDescription,   // Element to trigger animation
+            start: 'top 90%',             // Start animation when 70% of the element is in view
+            end: 'top 20%',               // End animation when 50% of the element is in view
+            scrub: true                   // Smoothly scrub through animation
+        }
+    });
+});

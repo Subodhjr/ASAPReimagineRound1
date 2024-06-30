@@ -48,48 +48,18 @@ gsap.to("#about p",{
         pin:true
     }
 })
-// document.addEventListener("DOMContentLoaded", function () {
-//     gsap.registerPlugin(ScrollTrigger);
+//project 0
+ddocument.addEventListener("DOMContentLoaded", function () {
+    // Animate header fade-in
+    gsap.from("#header", { duration: 1.5, opacity: 0, y: -50, ease: "power2.out" });
 
-//     // Animation for each bike section
-//     gsap.from("#bike", {
-//         opacity: 0,
-//         y: 50,
-//         duration: 1,
-//         stagger: 0.3,
-//         scrollTrigger: {
-//             trigger: "#bike",
-//             start: "top 80%",
-//             end: "bottom 20%",
-//             scrub: true,
-//         },
-//     });
+    // Animate product details section
+    gsap.from("#product-title", { duration: 1, opacity: 0, x: -100, ease: "power2.out", delay: 0.5 });
+    gsap.from("#product-image", { duration: 1, opacity: 0, x: 100, ease: "power2.out", delay: 1 });
+    gsap.from("#product-description", { duration: 1, opacity: 0, y: 50, ease: "power2.out", delay: 1.5 });
+    gsap.from("#register-button", { duration: 1, scale: 0.5, opacity: 0, ease: "bounce.out", delay: 2 });
 
-//     // Animation for images
-//     gsap.from("#bikes .image-container img", {
-//         scale: 0.8,
-//         opacity: 0,
-//         duration: 1.5,
-//         ease: "power4.out",
-//         scrollTrigger: {
-//             trigger: "#bikes .image-container",
-//             start: "top 80%",
-//             end: "bottom 20%",
-//             scrub: true,
-//         },
-//     });
-
-//     // Animation for text
-//     gsap.from("#bikes .page-content p", {
-//         opacity: 0,
-//         y: 30,
-//         duration: 1,
-//         stagger: 0.2,
-//         scrollTrigger: {
-//             trigger: "#bikes .page-content",
-//             start: "top 80%",
-//             end: "bottom 20%",
-//             scrub: true,
-//         },
-//     });
-// });
+    // Animate footer fade-in
+    gsap.from("#footer", { duration: 1.5, opacity: 0, y: 50, ease: "power2.out", delay: 2.5 });
+});
+    
