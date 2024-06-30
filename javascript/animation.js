@@ -62,4 +62,3 @@ ddocument.addEventListener("DOMContentLoaded", function () {
     // Animate footer fade-in
     gsap.from("#footer", { duration: 1.5, opacity: 0, y: 50, ease: "power2.out", delay: 2.5 });
 });
-    

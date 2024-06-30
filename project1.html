@@ -7,6 +7,9 @@
     <link rel="icon" type="image/png" href="/images/tablogo.png" sizes="128x128">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+   
+        
+      
 </head>
 <body>
     <!-- Header Section -->
@@ -23,12 +26,10 @@
                     <li class="dropdown">
                         <a href="#products" class="products-link">Products</a>
                         <ul class="dropdown-menu">
-                        <li><a href="Project0.html">Project Zero</a></li>
-                        <li><a href="Project1.html">Project One</a></li>
-                        <!-- Add more products as needed -->
+                            <li><a href="Project0.html">Project Zero</a></li>
+                            <li><a href="Project1.html">Project One</a></li>
                         </ul>
                     </li>
-                    <!-- <li><a href="index.html#about">About Us</a></li> -->
                     <li><a href="index.html#contact">Contact</a></li>
                 </ul>
             </div>
@@ -42,8 +43,16 @@
 
     <!-- Product Detail Section -->
     <section class="product-detail-section">
-        <h1>Project One</h1>
+        <h1 id="project-title" class="fade-in">Project One</h1>
         <img src="./images/yatri_1.jpg" alt="Project One">
+        <section class="additional-content">
+            <img src="https://d3j42yg2io56tq.cloudfront.net/render2.jpg" alt="Powertrain Image">
+            <div class="text-content" id="text-content">
+                <h2>THE POWERTRAIN</h2>
+                <p>The battery pack incorporates Lithium-Nickel-Manganese chemistry pouch cells holding 8 kWh of energy that provides a generous 230 km of true range. It is built with state-of-the-art protection circuitry and algorithms to maximize battery health and efficiency.</p>
+                <p>48 kW (64 hp) electric motor offers 650 Nm of instant torque at the wheel with 97% efficiency, maintenance-free life and 0-60 km/h in under 2.5 seconds.</p>
+            </div>
+        </section>
         <p>Here is a more detailed description of Project One. This includes its features, specifications, and other relevant details that potential customers might find useful.</p>
         <button type="submit">Register</button>
         <div class="button">
@@ -51,21 +60,46 @@
         </div>
     </section>
 
-    <div class="p0">
-        <div class="p0detail">
-            <div class="battery">
-                <p> battery details</p>
-            </div>
-        </div>
-    </div>
+    <!-- Additional Content Section -->
+    
+
     <!-- Footer Section -->
     <footer>
         <p>&copy; 2024 Yatri Motors. All rights reserved.</p>
     </footer>
+    
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <!-- Custom Script -->
+     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <script src="./javascript/animation.js"></script>
     <script src="./javascript/script.js"></script>
+    <script>
+        // Function to check if an element is in viewport
+        function isInViewport(element) {
+            const rect = element.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+        }
+        
+        // Function to handle scroll event
+        function handleScroll() {
+            const textContent = document.getElementById('text-content');
+            if (isInViewport(textContent)) {
+                textContent.classList.add('show');
+                window.removeEventListener('scroll', handleScroll); // Remove event listener after animation
+            }
+        }
+        
+        // Event listener for scroll
+        window.addEventListener('scroll', handleScroll);
+        </script>
 </body>
 </html>
