@@ -471,8 +471,8 @@ body.no-scroll {
 }
 
 .about-section p {
-    font-size: 7rem;
-    padding: 10vh;
+    font-size: 9rem;
+    padding: 15vh;
     text-wrap: nowrap;
 }
 
@@ -755,7 +755,7 @@ footer {
 }
 
 .dropdown-menu {
-    display: none;
+    display: flex;
     position: absolute;
     top: 100%;
     left: 0;
