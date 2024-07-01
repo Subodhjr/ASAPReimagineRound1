@@ -90,12 +90,12 @@ gsap.from("#products .maindiv .p0div",{
     scrollTrigger:{
         trigger:"#products .maindiv .p0div",
         scroller:"body",
-        markers:true,
+        // markers:true,
         start:"top 50%",
         end:"top 30%",
         scrub:2
     }
-})
+});
 gsap.from("#products .maindiv .p1div",{
     x:800,
     opacity:0,
@@ -105,12 +105,77 @@ gsap.from("#products .maindiv .p1div",{
     scrollTrigger:{
         trigger:"#products .maindiv .p0div",
         scroller:"body",
-        markers:true,
+        // markers:true,
         start:"top 50%",
         end:"top 30%",
         scrub:2
     }
-})
+});
+gsap.from("#contact .headcont",{
+    y:900,
+    opacity:0,
+    duration:2,
+    // stagger:1,
+    delay:0.2,
+    ease: "circ.out",
+    scrollTrigger:{
+        trigger:"#contact",
+        scroller:"body",
+        // markers:true,
+        start:"top 60%",
+        end:"top 40%",
+        scrub:2
+    }
+});
+gsap.from("#contact .contact-detail .more",{
+    y:900,
+    opacity:0,
+    duration:2,
+    // stagger:1,
+    delay:0.2,
+    ease: "circ.out",
+    scrollTrigger:{
+        trigger:"#contact .contact-detail",
+        scroller:"body",
+        // markers:true,
+        start:"top 57%",
+        end:"top 35%",
+        scrub:2
+    }
+});
+gsap.from("#contact .contact-detail .more1 div",{
+    x:-150,
+    opacity:0,
+    duration:2,
+    stagger:0.2,
+    delay:0.2,
+    ease: "circ.out",
+    scrollTrigger:{
+        trigger:"#contact .contact-detail",
+        scroller:"body",
+        // markers:true,
+        start:"top 57%",
+        end:"top 35%",
+        scrub:2
+    }
+});
+gsap.from("#contact .contact-detail .more2 div",{
+    x:-150,
+    opacity:0,
+    duration:2,
+    stagger:0.2,
+    delay:0.2,
+    ease: "circ.out",
+    scrollTrigger:{
+        trigger:"#contact .contact-detail",
+        scroller:"body",
+        // markers:true,
+        start:"top 57%",
+        end:"top 35%",
+        scrub:2
+    }
+});
+
 // gsap.from("#about p",{
 //     y:400,
 //     opacity:0,
