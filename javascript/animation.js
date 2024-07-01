@@ -1,8 +1,8 @@
-gsap.to("#home .herocontent h1", {
-  x: -300,
+gsap.to("#home .herocontent .hero-section-text .head1", {
+  x: -350,
   duration: 2,
   scrollTrigger: {
-    trigger: "#home .herocontent h1",
+    trigger: "#home .herocontent",
     scroller: "body",
     // markers:true,
     start: "top 20%",
@@ -10,16 +10,16 @@ gsap.to("#home .herocontent h1", {
     scrub: 3,
   },
 });
-gsap.to("#home .herocontent p", {
-  x: 500,
-  duration: 0.5,
-  opacity: 0,
+gsap.to("#home .herocontent .hero-section-text .head2", {
+  x: 350,
+  duration: 2,
+//   opacity: 0,
   scrollTrigger: {
-    trigger: "#home .herocontent p",
+    trigger: "#home .herocontent",
     scroller: "body",
     // markers:true,
-    start: "top 30%",
-    end: "top 15%",
+    start: "top 20%",
+    end: "top 5%",
     scrub: 3,
   },
 });
@@ -36,6 +36,10 @@ gsap.to("#home .herocontent .hero-btn", {
   },
 });
 gsap.to("#about p", {
+    y:-200,
+    opacity:0,
+    duration:0.5,
+    stagger:1,
   transform: "translateX(-500%)",
   ease: "slow(0.7,0.7,false)",
   scrollTrigger: {
@@ -45,7 +49,7 @@ gsap.to("#about p", {
     start: "top 0%",
     end: "top -250%",
     scrub: 2,
-    pin: true,
+    pin: true
   },
 });
 gsap.from(".services-section h2",{
@@ -77,6 +81,94 @@ gsap.from(".service-item",{
         // scrub:2
     }
 });
+// gsap.from("#about p",{
+//     y:400,
+//     opacity:0,
+//     duration:0.5,
+//     stagger:1,
+//     scrollTrigger:{
+//         trigger:"#about",
+//         scroller:"body",
+//         markers:true,
+//         start:"top 0%",
+//         end:"-250%",
+//         scrub:2,
+//         pin:true
+//     }
+// })
+// var tl = gsap.timeline()
+// tl.from("#about .i1",{
+//     y:400,
+//     opacity:0,
+//     duration:0.5
+// })
+// tl.from("#about .i2",{
+//     y:400,
+//     opacity:0,
+//     duration:0.5
+// })
+// tl.from("#about .i3",{
+//     y:400,
+//     opacity:0,
+//     duration:0.5
+// })
+// tl.from("#about .i4",{
+//     y:400,
+//     opacity:0,
+//     duration:0.5
+// })
+// tl.from("#about .i5",{
+//     y:400,
+//     opacity:0,
+//     duration:0.5
+// })
+// tl.from("#about .i6",{
+//     y:400,
+//     opacity:0,
+//     duration:0.5
+// })
+// tl.from("#about .i7",{
+//     y:400,
+//     opacity:0,
+//     duration:0.5
+// })
+// tl.from("#about .i8",{
+//     y:400,
+//     opacity:0,
+//     duration:0.5
+// })
+// tl.from("#about .i9",{
+//     y:400,
+//     opacity:0,
+//     duration:0.5
+// })
+// tl.from("#about .i10",{
+//     y:400,
+//     opacity:0,
+//     duration:0.5
+// })
+// tl.from("#about .i11",{
+//     y:400,
+//     opacity:0,
+//     duration:0.5
+// })
+// tl.from("#about .i12",{
+//     y:400,
+//     opacity:0,
+//     duration:0.5
+// })
+// tl.from("#about .i13",{
+//     y:400,
+//     opacity:0,
+//     duration:0.5
+// })
+// gsap.from("#about p", {
+//     y:500,
+//     opacity:0,
+//     ease: "slow(0.7,0.7,false)",
+//     scrollTrigger:"#about p",
+//     stagger:0.5
+//   });
 // document.addEventListener("DOMContentLoaded", function () {
 //     gsap.registerPlugin(ScrollTrigger);
 
@@ -128,7 +220,7 @@ gsap.from(".service-item",{
 //     var p1 = p.textContent
 //     var splittedword = p1.split(" ")
 //     var cut=""
-//     splittedword.forEach(function(e){
+//     splittedword.forEach(function(e,idx){
 //     cut= cut + " " + `<span class="a">${e}</span>`
 //     })
 //     p.innerHTML = cut

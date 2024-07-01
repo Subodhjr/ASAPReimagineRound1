@@ -562,15 +562,17 @@ body.no-scroll {
   background: #0e0e0e; /* Dark background */
 }
 
-.about-section h2 {
+/* .about-section h2 {
   font-size: 5rem;
   margin-bottom: 20px;
   color: #00cccc; /* New color */
-}
+/* }  */
 
 .about-section p {
   font-size: 9rem;
   padding: 15vh;
+  padding-top: 25vh;
+  display: flex;
   text-wrap: nowrap;
 }
 
