@@ -498,13 +498,16 @@ body.no-scroll {
     /* margin: 2%; */
 }
 .p0div{
-    width: 40vw;
+    width: 44vw;
     padding: 2%;
+    margin-left: 2%;
+    background-color: #222222;
 }
 .p1div{
-    width: 40vw;
+    width: 44vw;
     padding: 2%;
     margin-right: 2%;
+    background-color: #222222;
     /* padding-right: 2%; */
     /* height: 60vh; */
     /* width: 50vh; */
@@ -517,7 +520,39 @@ body.no-scroll {
     width: 40vw;
     height: 25vw;
     /* padding: 2%; */
-
+}
+.discdiv{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    /* text-align: center; */
+}
+.titdiv{
+    text-align: center;
+}
+.discbutton{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-top: 9%;
+}
+.discbutton button{
+    background-color: #00cccc;
+    color: #222222;
+    height: 6vh;
+    width: 20vh;
+    border-radius: 3rem;
+    border-style: hidden;
+    font-size: medium;
+    font-weight: 700;
+}
+.discbutton button:hover{
+    color: #00cccc;
+    background-color: #222222;
+    transition: 0.3s;
+    border-color: #00cccc;
+    border-style: solid;
 }
 /* About Us Section */
 .about-section {
