@@ -8,8 +8,6 @@
 }
 body {
     font-family: 'Barlow', sans-serif;
-    color: #ffffff;
-    background-color: #0e0e0e;
     line-height: 1.6;
     overflow-x: hidden;
     height: 100%;
@@ -50,27 +48,20 @@ header {
     transform-origin: center;
 }
 
-.nav-links a {
-    text-decoration: none;
-    color: #000;
-    transition: color 0.3s ease; /* Smooth transition for color change */
-}
-
-.nav-links a:hover {
-    color: #ff6347; /* Change color on hover */
-}
-
-
 nav {
     display: flex;
     flex-direction: row;
     justify-content: center;
     font-weight: 400;
     align-items: center;
-    /* size: 750px; */
-    /* background-color: black; */
-    /* box-shadow: gray; */
-    /* border-radius: 100px; */
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    padding-right: 100px;
+    letter-spacing: 2px;
 }
 nav.nav{
     font-weight: bold;
@@ -86,6 +77,25 @@ nav.nav{
     margin: auto;
     
 }
+.nav-links li {
+    margin-left: 35px;
+}
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.nav-links a:hover {
+    color: #27B8AC; /* Change color on hover */
+}
+
+/* .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+} */
 @keyframes scaleIn {
     0% {
         transform: scaleX(0);
@@ -110,28 +120,6 @@ nav.nav{
 .logo a:active {
     background-color: transparent;
     color: transparent;
-}
-.nav-links {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-    padding-right: 100px;
-    letter-spacing: 2px;
-}
-.nav-links li {
-    margin-left: 35px;
-}
-
-.nav-links a {
-    color: #00CCCC; /* New color */
-    text-decoration: none;
-    font-size: 1.2rem;
-    transition: color 0.3s;
-}
-
-.nav-links a:hover {
-    color: #aaaaaa;
 }
 .contact-heading {
     color: #333;

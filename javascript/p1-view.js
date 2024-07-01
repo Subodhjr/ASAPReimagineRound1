@@ -1,36 +1,36 @@
-function locomotive() {
+  function locomotive() {
     gsap.registerPlugin(ScrollTrigger);
-  
+    
     const locoScroll = new LocomotiveScroll({
       el: document.querySelector(".main"),
       smooth: true ,
     });
     locoScroll.on("scroll", ScrollTrigger.update);
-  
+    
     ScrollTrigger.scrollerProxy(".main", {
       scrollTop(value) {
         return arguments.length
           ? locoScroll.scrollTo(value, 0, 0)
           : locoScroll.scroll.instance.scroll.y;
-      },
+        },
   
-      getBoundingClientRect() {
-        return {
-          top: 0,
-          left: 0,
-          width: window.innerWidth,
-          height: window.innerHeight,
-        };
-      },
-  
-      pinType: document.querySelector(".main").style.transform
+        getBoundingClientRect() {
+          return {
+            top: 0,
+            left: 0,
+            width: window.innerWidth,
+            height: window.innerHeight,
+          };
+        },
+        
+        pinType: document.querySelector(".main").style.transform
         ? "transform"
         : "fixed",
-    });
+      });
 
-    ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
-    ScrollTrigger.refresh();
-  }
+      ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
+      ScrollTrigger.refresh();
+    }
   locomotive();
   
   
@@ -114,8 +114,8 @@ function locomotive() {
     ./images/p1/p1-360/63.png
     ./images/p1/p1-360/64.png
     ./images/p1/p1-360/65.png
-   `;
-    return data.split("\n")[index].trim();
+    `;
+    return data.split("\n")[index];
   }
   
   const frameCount = 65;
@@ -148,7 +148,7 @@ function locomotive() {
     onUpdate: render,
   });
   
-//   images[1].onload = render;
+  //   images[1].onload = render;
   images[1].onload = render;
   
   function render() {
@@ -184,7 +184,7 @@ function locomotive() {
     end: `600% top`,
   });
   
-gsap.to(".page1",{
+  gsap.to(".page1",{
     scrollTrigger:{
       trigger:`.page1`,
       start:`top top`,
@@ -205,33 +205,6 @@ gsap.to(".page1",{
   gsap.to(".page3",{
     scrollTrigger:{
       trigger:`.page3`,
-      start:`top top`,
-      end:`bottom top`,
-      pin:true,
-      scroller:`.main`
-    }
-  })
-gsap.to(".page4",{
-    scrollTrigger:{
-      trigger:`page4`,
-      start:`top top`,
-      end:`bottom top`,
-      pin:true,
-      scroller:`.main`
-    }
-  })
-  gsap.to(".page5",{
-    scrollTrigger:{
-      trigger:`.page5`,
-      start:`top top`,
-      end:`bottom top`,
-      pin:true,
-      scroller:`.main`
-    }
-  })
-  gsap.to(".page6",{
-    scrollTrigger:{
-      trigger:`.page6`,
       start:`top top`,
       end:`bottom top`,
       pin:true,
