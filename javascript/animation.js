@@ -48,6 +48,35 @@ gsap.to("#about p", {
     pin: true,
   },
 });
+gsap.from(".services-section h2",{
+    duration:0.3,
+    opacity:0,
+    x:-150,
+    stagger:0.12,
+    scrollTrigger:{
+        trigger: ".services-section",
+        scroller:"body",
+        // markers:true,
+        start:"top 40%",
+        end:"top 20%",
+        scrub:2
+    }
+});
+gsap.from(".service-item",{
+    duration:2,
+    opacity:0,
+    x:20,
+    stagger:0.1,
+    delay:0.2,
+    scrollTrigger:{
+        trigger: ".services-section",
+        scroller:"body",
+        // markers:true,
+        start:"top 25%",
+        end:"top 0%"
+        // scrub:2
+    }
+});
 // document.addEventListener("DOMContentLoaded", function () {
 //     gsap.registerPlugin(ScrollTrigger);
 

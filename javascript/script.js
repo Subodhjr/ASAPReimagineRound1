@@ -176,9 +176,20 @@ serviceItem.forEach((item) => {
 });
 
 // Hover effect using GSAP
-const serviceItems = document.querySelectorAll(".service-item");
+const p0 = document.querySelectorAll(".p0div");
 
-serviceItems.forEach((item) => {
+p0.forEach((item) => {
+  item.addEventListener("mouseenter", () => {
+    gsap.to(item, { scale: 1.1, duration: 0.3 });
+  });
+
+  item.addEventListener("mouseleave", () => {
+    gsap.to(item, { scale: 1, duration: 0.3 });
+  });
+});
+const p1 = document.querySelectorAll(".p1div");
+
+p1.forEach((item) => {
   item.addEventListener("mouseenter", () => {
     gsap.to(item, { scale: 1.1, duration: 0.3 });
   });

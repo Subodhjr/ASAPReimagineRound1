@@ -95,7 +95,7 @@ nav.nav {
   display: flex;
   align-items: center;
   margin-left: auto;
-  padding-right: 100px;
+  padding-right: 50px;
   letter-spacing: 2px;
 }
 .nav-links li {
@@ -348,6 +348,7 @@ body.no-scroll {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  padding-top: 5vh;
 }
 
 .service-item {
@@ -491,7 +492,7 @@ body.no-scroll {
 }
 .maindiv{
     display: flex;
-    max-width: 97vw;
+    max-width: 96vw;
     height: 100vh;
     object-fit: cover;
     justify-content: space-between;
@@ -500,7 +501,7 @@ body.no-scroll {
 .p0div{
     width: 44vw;
     padding: 2%;
-    margin-left: 2%;
+    margin-left: 5%;
     background-color: #222222;
 }
 .p1div{
