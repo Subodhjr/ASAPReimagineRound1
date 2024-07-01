@@ -70,7 +70,7 @@ gsap.from(".service-item",{
     duration:2,
     opacity:0,
     x:20,
-    stagger:0.1,
+    stagger:0.3,
     delay:0.2,
     scrollTrigger:{
         trigger: ".services-section",
@@ -81,6 +81,36 @@ gsap.from(".service-item",{
         // scrub:2
     }
 });
+gsap.from("#products .maindiv .p0div",{
+    x:-800,
+    opacity:0,
+    duration:2,
+    stagger:1,
+    // delay:0.2,
+    scrollTrigger:{
+        trigger:"#products .maindiv .p0div",
+        scroller:"body",
+        markers:true,
+        start:"top 50%",
+        end:"top 30%",
+        scrub:2
+    }
+})
+gsap.from("#products .maindiv .p1div",{
+    x:800,
+    opacity:0,
+    duration:2,
+    stagger:1,
+    // delay:0.2,
+    scrollTrigger:{
+        trigger:"#products .maindiv .p0div",
+        scroller:"body",
+        markers:true,
+        start:"top 50%",
+        end:"top 30%",
+        scrub:2
+    }
+})
 // gsap.from("#about p",{
 //     y:400,
 //     opacity:0,
