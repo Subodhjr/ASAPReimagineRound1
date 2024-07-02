@@ -37,7 +37,7 @@ gsap.to("#home .herocontent .hero-btn", {
 });
 gsap.to("#about p", {
     y:-200,
-    opacity:0,
+    // opacity:0,
     duration:0.5,
     stagger:1,
   transform: "translateX(-500%)",
