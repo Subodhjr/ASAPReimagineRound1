@@ -4,13 +4,13 @@ var t = gsap.timeline()
 
 t.to(".menu",{
     right:0,
-    duration:0.5,
+    duration:0.2,
 
 })
 t.from(".menu .men",{
     x:150,
-    duration:0.4,
-    stagger:0.3,
+    duration:0.2,
+    stagger:0.1,
     opacity:0
 })
 t.from(".menu i",{

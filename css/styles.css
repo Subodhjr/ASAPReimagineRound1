@@ -36,10 +36,6 @@ header {
   /* transition: color 0.3s ease; Smooth transition for color change */
 }
 
-/* .nav-links a:hover { */
-/* color: #ff6347; Change color on hover */
-/* } */
-
 nav {
   display: flex;
   flex-direction: row;
@@ -70,7 +66,7 @@ nav {
   background-color: #ffffff;
   margin: 4px;
   
-  transition: all 0.3s ease;
+  transition: all 0.1s ease;
 }
 .hamburger.active .line1 {
   transform: rotate(-45deg) translate(-5px, 5px);
@@ -124,7 +120,7 @@ nav.nav {
   /* width: 750px; */
   align-items: center;
   justify-content: space-between;
-  animation: scaleIn 1.5s ease forwards;
+  /* animation: scaleIn 1.5s ease forwards; */
   transform-origin: center;
   /* border-color: #3b53586a; */
   /* border-style: solid; */
@@ -238,7 +234,7 @@ nav.nav {
 }
 
 .contact-heading:hover {
-  color: #f00;
+  /* color: #f00; */
   transform: scale(1.1);
 }
 
