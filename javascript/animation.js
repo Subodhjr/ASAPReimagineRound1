@@ -13,7 +13,7 @@ gsap.to("#home .herocontent .hero-section-text .head1", {
 gsap.to("#home .herocontent .hero-section-text .head2", {
   x: 350,
   duration: 2,
-//   opacity: 0,
+  //   opacity: 0,
   scrollTrigger: {
     trigger: "#home .herocontent",
     scroller: "body",
@@ -36,10 +36,10 @@ gsap.to("#home .herocontent .hero-btn", {
   },
 });
 gsap.to("#about p", {
-    y:-200,
-    // opacity:0,
-    duration:0.5,
-    stagger:1,
+  y: -200,
+  // opacity:0,
+  duration: 0.5,
+  stagger: 1,
   transform: "translateX(-500%)",
   ease: "slow(0.7,0.7,false)",
   scrollTrigger: {
@@ -47,135 +47,162 @@ gsap.to("#about p", {
     scroller: "body",
     // markers:true,
     start: "top 0%",
-    end: "top -250%",
+    end: "top -300%",
     scrub: 2,
-    pin: true
+    pin: true,
   },
 });
-gsap.from(".services-section h2",{
-    duration:0.3,
-    opacity:0,
-    x:-150,
-    stagger:0.12,
-    scrollTrigger:{
-        trigger: ".services-section",
-        scroller:"body",
-        // markers:true,
-        start:"top 40%",
-        end:"top 20%",
-        scrub:2
-    }
+gsap.from(".services-section h2", {
+  duration: 0.3,
+  opacity: 0,
+  x: -150,
+  stagger: 0.12,
+  scrollTrigger: {
+    trigger: ".services-section",
+    scroller: "body",
+    // markers:true,
+    start: "top 40%",
+    end: "top 20%",
+    // scrub:2
+  },
 });
-gsap.from(".service-item",{
-    duration:2,
-    opacity:0,
-    x:20,
-    stagger:0.3,
-    delay:0.2,
-    scrollTrigger:{
-        trigger: ".services-section",
-        scroller:"body",
-        // markers:true,
-        start:"top 25%",
-        end:"top 0%"
-        // scrub:2
-    }
+gsap.from(".service-item", {
+  duration: 2,
+  opacity: 0,
+  x: 20,
+  stagger: 0.3,
+  delay: 0.2,
+  scrollTrigger: {
+    trigger: ".services-section",
+    scroller: "body",
+    // markers:true,
+    start: "top 25%",
+    end: "top 0%",
+    // scrub:2
+  },
 });
-gsap.from("#products .maindiv .p0div",{
-    x:-800,
-    opacity:0,
-    duration:2,
-    stagger:1,
-    // delay:0.2,
-    scrollTrigger:{
-        trigger:"#products .maindiv .p0div",
-        scroller:"body",
-        // markers:true,
-        start:"top 50%",
-        end:"top 30%",
-        scrub:2
-    }
+gsap.from("#products .maindiv .p0div", {
+  x: -800,
+  opacity: 0,
+  duration: 2,
+  stagger: 1,
+  // delay:0.2,
+  scrollTrigger: {
+    trigger: "#products .maindiv .p0div",
+    scroller: "body",
+    // markers:true,
+    start: "top 50%",
+    end: "top 30%",
+    scrub: 2,
+  },
 });
-gsap.from("#products .maindiv .p1div",{
-    x:800,
-    opacity:0,
-    duration:2,
-    stagger:1,
-    // delay:0.2,
-    scrollTrigger:{
-        trigger:"#products .maindiv .p0div",
-        scroller:"body",
-        // markers:true,
-        start:"top 50%",
-        end:"top 30%",
-        scrub:2
-    }
+gsap.from("#products .maindiv .p1div", {
+  x: 800,
+  opacity: 0,
+  duration: 2,
+  stagger: 1,
+  // delay:0.2,
+  scrollTrigger: {
+    trigger: "#products .maindiv .p0div",
+    scroller: "body",
+    // markers:true,
+    start: "top 50%",
+    end: "top 30%",
+    scrub: 2,
+  },
 });
-gsap.from("#contact .headcont",{
-    y:900,
-    opacity:0,
-    duration:2,
-    // stagger:1,
-    delay:0.2,
-    ease: "circ.out",
-    scrollTrigger:{
-        trigger:"#contact",
-        scroller:"body",
-        // markers:true,
-        start:"top 60%",
-        end:"top 40%",
-        scrub:2
-    }
+gsap.from("#contact .headcont", {
+  y: 900,
+  opacity: 0,
+  duration: 2,
+  // stagger:1,
+  delay: 0.2,
+  ease: "circ.out",
+  scrollTrigger: {
+    trigger: "#contact",
+    scroller: "body",
+    // markers:true,
+    start: "top 60%",
+    end: "top 40%",
+    scrub: 2,
+  },
 });
-gsap.from("#contact .contact-detail .more",{
-    y:900,
-    opacity:0,
-    duration:2,
-    // stagger:1,
-    delay:0.2,
-    ease: "circ.out",
-    scrollTrigger:{
-        trigger:"#contact .contact-detail",
-        scroller:"body",
-        // markers:true,
-        start:"top 57%",
-        end:"top 35%",
-        scrub:2
-    }
+gsap.from("#contact .contact-detail .more", {
+  y: 900,
+  opacity: 0,
+  duration: 2,
+  // stagger:1,
+  delay: 0.2,
+  ease: "circ.out",
+  scrollTrigger: {
+    trigger: "#contact .contact-detail",
+    scroller: "body",
+    // markers:true,
+    start: "top 57%",
+    end: "top 35%",
+    scrub: 2,
+  },
 });
-gsap.from("#contact .contact-detail .more1 div",{
-    x:-150,
-    opacity:0,
-    duration:2,
-    stagger:0.2,
-    delay:0.2,
-    ease: "circ.out",
-    scrollTrigger:{
-        trigger:"#contact .contact-detail",
-        scroller:"body",
-        // markers:true,
-        start:"top 57%",
-        end:"top 35%",
-        scrub:2
-    }
+gsap.from("#contact .contact-detail .more1 div", {
+  x: -150,
+  opacity: 0,
+  duration: 2,
+  stagger: 0.2,
+  delay: 0.2,
+  ease: "circ.out",
+  scrollTrigger: {
+    trigger: "#contact .contact-detail",
+    scroller: "body",
+    // markers:true,
+    start: "top 57%",
+    end: "top 35%",
+    scrub: 2,
+  },
 });
-gsap.from("#contact .contact-detail .more2 div",{
-    x:-150,
-    opacity:0,
-    duration:2,
-    stagger:0.2,
-    delay:0.2,
-    ease: "circ.out",
-    scrollTrigger:{
-        trigger:"#contact .contact-detail",
-        scroller:"body",
-        // markers:true,
-        start:"top 57%",
-        end:"top 35%",
-        scrub:2
-    }
+gsap.from("#contact .contact-detail .more2 div", {
+  x: -150,
+  opacity: 0,
+  duration: 2,
+  stagger: 0.2,
+  delay: 0.2,
+  ease: "circ.out",
+  scrollTrigger: {
+    trigger: "#contact .contact-detail",
+    scroller: "body",
+    // markers:true,
+    start: "top 57%",
+    end: "top 35%",
+    scrub: 2,
+  },
 });
+// document.addEventListener("DOMContentLoaded", () => {
+//   // gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
+//     document.querySelectorAll(".navs").forEach((link) => {
+//       link.addEventListener("click", function (e) {
+//       e.preventDefault();
+//       const targetId = this.getAttribute("href");
+//       const target = document.querySelector(targetId);
 
+//       // Disable animations during scroll
+//       animations.forEach((animation) => animation.scrollTrigger.disable());
+
+//       // Perform smooth scrolling
+//       gsap.to(window, {
+//         scrollTo: { y: target.offsetTop, autoKill: false },
+//         duration: 1,
+//         onComplete: () => {
+//           // Re-enable animations after scroll
+//           animations.forEach((animation) => animation.scrollTrigger.enable());
+//         },
+//       });
+//     });
+//   });
+
+  // Resume animations on user scroll
+  // window.addEventListener("scroll", () => {
+    // animations.forEach((animation) => animation.resume());
+  // });
+// });
 // gsap.from("#about p",{
 //     y:400,
 //     opacity:0,
