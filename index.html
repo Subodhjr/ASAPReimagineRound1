@@ -16,6 +16,9 @@
     <link rel="stylesheet" href="./css/p1-view.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <!-- Slick Slider CSS -->
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
 </head>
@@ -29,22 +32,17 @@
                 <a href="./index.html"><img src="./images/logo/logo.png" alt="Logo"></a>
             </div>
             <div>
-                <ul class="nav-links">
-                    <li><a href="#home" class="navs">Home</a></li>
-                    <li><a href="#services" class="navs">Services</a></li>
-                    <li class="dropdown">
-                        <a href="#products" class="navs">Products</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="Project0.html">Project Zero</a></li>
-                            <li><a href="Project1.html">Project One</a></li>
-                        <!-- Add more products as needed -->
-                        </ul>
-                    </li>
-                </ul>
                 <div class="hamburger">
-                    <i class="fas fa-bars"></i>
+                    <i class="ri-menu-3-fill"></i>
                 </div>
+            </div>
         </nav>
+        <div class="menu">
+            <i class="ri-close-fill"></i>
+            <div class="men"><li><a href="./index.html">Home</a></li></div>
+            <div class="men"><li><a href="./Project0.html">Project Zero</a></li></div>
+            <div class="men"><li><a href="./project1.html">project One</a></li></div>
+        </div>
         </div>
     </header>
     
@@ -432,16 +430,15 @@
 
      <!-- this script was breaking the styling of gallery section so it is commented out if this is necessary then ask -->
     
-     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-    <!-- our aos data -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init({
-        offset: 120,
-        duration: 1000,
-      });
-    </script>
+     
+     <!-- our aos data -->
+     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+     <script>
+         AOS.init({
+             offset: 120,
+             duration: 1000,
+            });
+            </script>
     <!-- Slick Slider JS -->
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script> -->
     <!-- Custom Script -->
@@ -449,7 +446,9 @@
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js" integrity="sha512-1PKqXBz2ju2JcAerHKL0ldg0PT/1vr3LghYAtc59+9xy8e19QEtaNUyt1gprouyWnpOPqNJjL4gXMRMEpHYyLQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./javascript/p1-view.js"></script>
+    <script src="./javascript/menu.js"></script>
     <script src="./javascript/script.js"></script>
     <script src="./javascript/animation.js"></script>
     <script src="./javascript/slider.js"></script>

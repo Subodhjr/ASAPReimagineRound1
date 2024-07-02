@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project Zero</title>
     <link rel="icon" type="image/png" href="/images/tablogo.png" sizes="128x128">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"/>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/cursor.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -23,28 +26,16 @@
             <div class="logo">
                 <a href="./index.html"><img src="./images/logo/logo.png" alt="Logo"></a>
             </div>
-            <div>
-                <ul class="nav-links">
-                    <li><a href="index.html#home">Home</a></li>
-                    <li><a href="index.html#services">Services</a></li>
-                    <li class="dropdown">
-                        <a href="#products" class="products-link">Products</a>
-                        <ul class="dropdown-menu">
-                        <li><a href="Project0.html">Project Zero</a></li>
-                        <li><a href="Project1.html">Project One</a></li>
-                        <!-- Add more products as needed -->
-                        </ul>
-                    </li>
-                    <!-- <li><a href="index.html#about">About Us</a></li> -->
-                    <li><a href="index.html#contact">Contact</a></li>
-                </ul>
-            </div>
             <div class="hamburger">
-                <i class="fas fa-bars"></i>
+                <i class="ri-menu-3-fill"></i>
             </div>
-        </div>
-    </div>
         </nav>
+        <div class="menu">
+            <i class="ri-close-fill"></i>
+            <div class="men"><li><a href="./index.html">Home</a></li></div>
+            <div class="men"><li><a href="./Project0.html">Project Zero</a></li></div>
+            <div class="men"><li><a href="./project1.html">project One</a></li></div>
+        </div>
         </div>
     </header>
 
@@ -177,6 +168,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <!-- Custom Script -->
     <script src="./javascript/animation.js"></script>
+    <script src="./javascript/menu.js"></script>
     <script src="./javascript/script.js"></script>
     
 </body>
