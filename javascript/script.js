@@ -257,11 +257,31 @@ document.addEventListener('DOMContentLoaded', function() {
         duration: 1.5,                   // Animation duration in seconds
         scrollTrigger: {
             trigger: productDescription,   // Element to trigger animation
-            start: 'top 90%',             // Start animation when 70% of the element is in view
-            end: 'top 20%',               // End animation when 50% of the element is in view
+            start: 'top 100%',         
+              end: 'top 50%',               
             scrub: true                   // Smoothly scrub through animation
         }
     });
 });
+function isInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
 
+// Function to handle scroll event
+function handleScroll() {
+    const textContent = document.getElementById('text-content');
+    if (isInViewport(textContent)) {
+        textContent.classList.add('show');
+        window.removeEventListener('scroll', handleScroll); // Remove event listener after animation
+    }
+}
+
+// Event listener for scroll
+window.addEventListener('scroll', handleScroll);
   

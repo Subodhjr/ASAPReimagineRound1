@@ -922,3 +922,44 @@ footer {
         opacity: 1;
         transform: translateY(0); /* Move to actual position */
     }
+    .product-detail-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    /* project zero specs */
+    .image-specs-container {
+        background-color: #000;
+        position: relative;
+        width: 100%;
+        max-width: auto; 
+        margin-bottom: 20px; 
+    }
+    
+    .image-specs-container img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .specs {
+        position: absolute;
+        bottom: 60px;
+        left: 0;
+        width: 100%;
+       
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    
+    .neutralize.list-inline {
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .neutralize.list-inline li {
+        text-align: center;
+    }
+    
