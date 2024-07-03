@@ -1069,7 +1069,7 @@ footer {
   align-items: center;
   background-color: #222222;
   border-radius: 2rem;
-  width: 45vw;
+  width: 50vw;
 }
 .titlediv{
   font-weight: 700;
@@ -1174,4 +1174,18 @@ footer {
   height: 80vh;
   width: 1px;
   background: #fff;
+}
+.imagediv{
+  /* position: absolute; */
+  right: 5%;
+  width: 50vw;
+  /* background-color: #222222; */
+  /* padding-left: 10vw; */
+}
+.imagedivp1{
+  width: 80vw;
+}
+.imagediv img{
+  /* position: absolute; */
+  right: 10%;
 }
