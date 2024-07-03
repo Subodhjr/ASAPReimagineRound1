@@ -175,6 +175,83 @@ gsap.from("#contact .contact-detail .more2 div", {
     scrub: 2,
   },
 });
+var tt = gsap.timeline()
+
+tt.from(".titlediv",{
+  y:20,
+  opacity:0,
+  duration:0.5,
+  delay:0.5
+})
+tt.from(".maindesc",{
+  opacity:0,
+  duration:0.5,
+  delay:0.2,
+  stagger:0.3
+})
+tt.from(".rupee",{
+  y:10,
+  opacity:0,
+  duration:0.5,
+  // delay:0.2,
+  // stagger:0.3
+})
+tt.from(".but button",{
+  opacity:0,
+  duration:1
+})
+gsap.from(".detaildiv .moredet .fewdet",{
+  scrollTrigger:{
+    trigger:".detaildiv",
+    scroller:"body",
+    // marker:true,
+    start:"top 50%",
+    end:"top 30%",
+    scrub:2
+  },
+  y:10,
+  opacity:0,
+  stagger:0.5
+})
+gsap.from(".secsect .specs",{
+  scrollTrigger:{
+    trigger:".secsect",
+    scroller:"body",
+    // marker:true,
+    start:"top 60%",
+    end:"top 30%",
+    scrub:2
+  },
+  y:10,
+  opacity:0,
+  stagger:0.5
+})
+gsap.from("#sfrow .infor",{
+  scrollTrigger:{
+    trigger:"#sfrow",
+    scroller:"body",
+    marker:true,
+    start:"top 55%",
+    end:"top 20%",
+    scrub:2
+  },
+  x:10,
+  opacity:0,
+  stagger:0.5
+})
+gsap.from("#gfrow .infor",{
+  scrollTrigger:{
+    trigger:"#gfrow",
+    scroller:"body",
+    marker:true,
+    start:"top 55%",
+    end:"top 20%",
+    scrub:2
+  },
+  x:10,
+  opacity:0,
+  stagger:0.5
+})
 // document.addEventListener("DOMContentLoaded", () => {
 //   // gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 //     document.querySelectorAll(".navs").forEach((link) => {
