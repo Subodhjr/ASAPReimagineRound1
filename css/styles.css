@@ -1323,3 +1323,8 @@ footer {
     width: 50vh;
   }
 }
+/* @media screen and (max-width: 800px){
+  .bike_main{
+    display:none;
+  }
+} */
