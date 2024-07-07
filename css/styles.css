@@ -1302,9 +1302,6 @@ footer {
     padding-top: 10vh;
     width: 70vh;
   }
-  #sfrow{
-    /* background-color: #00cccc; */
-  }
   .infor{
     display: flex;
     justify-content: space-between;
@@ -1323,8 +1320,41 @@ footer {
     width: 50vh;
   }
 }
-/* @media screen and (max-width: 800px){
+@media screen and (max-width: 800px){
   .bike_main{
     display:none;
   }
-} */
+  .about-section{
+    display: none;
+  }
+  .contact-detail{
+    display: flex;
+    flex-direction: column;
+  }
+  .products{
+    height: 1000px;
+    padding: 70px;
+  }
+  .maindiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  .p0div{
+    width: 80vw;
+    padding-bottom: 10px;
+  }
+  .p1div{
+    width: 80vw;
+    padding-top: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width:1300px){
+  body{
+    overflow-x: hidden;
+  }
+}
