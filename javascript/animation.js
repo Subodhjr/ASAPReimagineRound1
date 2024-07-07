@@ -176,7 +176,24 @@ function initAnimation(){
         scrub: 2,
       },
     });
-    var tt = gsap.timeline()
+}
+function terminateAllAnimations() {
+  // Select the body element to clear GSAP properties for all child elements
+  gsap.set(document.body, {clearProps: "all"});
+}
+function checkScreenSize(){
+  if(window.innerWidth > 800){
+    initAnimation();
+  }
+  else {
+    // Add the class to disable animations and terminate all existing animations
+    terminateAllAnimations();
+}
+}
+window.addEventListener('load', checkScreenSize);
+window.addEventListener('resize', checkScreenSize);
+
+var tt = gsap.timeline()
     
     tt.from(".titlediv",{
       y:20,
@@ -253,19 +270,3 @@ function initAnimation(){
       opacity:0,
       stagger:0.5
     })
-}
-function terminateAllAnimations() {
-  // Select the body element to clear GSAP properties for all child elements
-  gsap.set(document.body, {clearProps: "all"});
-}
-function checkScreenSize(){
-  if(window.innerWidth > 800){
-    initAnimation();
-  }
-  else {
-    // Add the class to disable animations and terminate all existing animations
-    terminateAllAnimations();
-}
-}
-window.addEventListener('load', checkScreenSize);
-window.addEventListener('resize', checkScreenSize);
